@@ -20,13 +20,17 @@ RSpec.describe "Homes", type: :request do
       post user_session_path, params: { user: { email: user.email, password: user.password} }
       expect(response).to have_http_status(303)
     end
-
+    it "when the user is signed display a 'Welcome'" do
+      user = FactoryBot.create(:user)
+      post user_session_path, params: { user: { email: user.email, password: user.password} }
+      get root_path
+      expect(response.body.include?("Welcome")).to be true
+    end
     it "an invalid account fails to sign in" do
       post user_session_path, params: { user: { email: "notauser@notregisregisterd.com", password: "864632"} }
       expect(response).to have_http_status(422)
     end
   end
-
   describe "DELETE /users/sign_out" do
     it "allows a user to logout after signing in" do
       user = FactoryBot.create(:user)
@@ -35,7 +39,6 @@ RSpec.describe "Homes", type: :request do
       expect(response).to have_http_status(303)
     end
   end
-
   describe "GET /users/sign_up" do
     it "renders the sign up page" do
       get new_user_registration_path
