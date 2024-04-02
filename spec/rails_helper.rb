@@ -30,7 +30,7 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 RSpec.configure do |config|
-  config.include Devise::Test::ControllerHelpers
+  config.include Devise::Test::IntegrationHelpers, type: :request
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your

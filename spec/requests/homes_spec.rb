@@ -22,8 +22,7 @@ RSpec.describe "Homes", type: :request do
     end
     it "when the user is signed display a 'Welcome'" do
       user = FactoryBot.create(:user)
-      debugger
-      post user_session_path, params: { user: { email: user.email, password: user.password} }
+      sign_in(user)
       get root_path
       expect(response.body.include?("Welcome")).to be true
     end
