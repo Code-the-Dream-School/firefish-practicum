@@ -36,3 +36,9 @@ Create a dev-main branch:
 2. In the Team's Google Drive, open the file named API Tokens (https://docs.google.com/document/d/1dUSup56OvHKJWdhSUIE5RjaJvZmXjGY0zBlD3qfzys8/edit)
 3. Copy all the contents of this file and paste it to the ".env" file
 4. Save your ".env" file
+
+## CI statuses
+
+| `main` | `dev-main` |
+| ------ | ---------- |
+| ![CI badge for main](https://github.com/Code-the-Dream-School/firefish-practicum/actions/workflows/ci.yml/badge.svg?branch=main) | ![CI badge for dev-main](https://github.com/Code-the-Dream-School/firefish-practicum/actions/workflows/ci.yml/badge.svg?branch=dev-main) |
