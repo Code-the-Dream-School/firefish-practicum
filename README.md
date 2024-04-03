@@ -1,24 +1,38 @@
-# README
+# Firefish - TravelApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app can be used to plan for travels by building an itinerary. Firefish students will practice everything learned from previous classes, and go beyond by integrating with a third-party API.
 
-Things you may want to cover:
+## Kanban Board
 
-* Ruby version
+https://github.com/orgs/Code-the-Dream-School/projects/39/views/1
 
-* System dependencies
+## Updated MVP
 
-* Configuration
+https://docs.google.com/document/d/11x6IiLobgSv9nSVWiJgmuIsjhN1IFt5iNeCNvN7XNz0/edit
 
-* Database creation
+## Team Drive
 
-* Database initialization
+https://drive.google.com/drive/u/2/home
 
-* How to run the test suite
+## Schema
 
-* Services (job queues, cache servers, search engines, etc.)
+https://docs.google.com/presentation/d/19QPaftbS53T1aDwoWH2HPmx9mRD4EUKEzHbJKBwfpOs/edit#slide=id.g2c78055cd7f_0_172
 
-* Deployment instructions
+Please @Ron in our Slack channel if unclear
 
-* ...
+## Setting Up Your Environment
+
+Clone the repo:
+
+    git clone https://github.com/Code-the-Dream-School/firefish-practicum.git
+
+Create a dev-main branch:
+
+    git checkout -b dev-main origin/dev-main
+
+## Creating your Dotenv file
+
+1. In your root directory, create a new file named ".env"
+2. In the Team's Google Drive, open the file named API Tokens (https://docs.google.com/document/d/1dUSup56OvHKJWdhSUIE5RjaJvZmXjGY0zBlD3qfzys8/edit)
+3. Copy all the contents of this file and paste it to the ".env" file
+4. Save your ".env" file

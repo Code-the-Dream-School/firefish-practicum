@@ -112,6 +112,7 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.1)
+    dotenv (3.1.0)
     drb (2.2.1)
     erubi (1.12.0)
     execjs (2.9.1)
@@ -299,6 +300,7 @@ DEPENDENCIES
   capybara
   debug
   devise
+  dotenv
   factory_bot_rails
   faker
   importmap-rails

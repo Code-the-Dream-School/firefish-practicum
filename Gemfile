@@ -75,3 +75,4 @@ end
 
 gem "bootstrap", "~> 5.3"
 gem 'sassc-rails'
+gem 'dotenv', groups: [:development, :test]
