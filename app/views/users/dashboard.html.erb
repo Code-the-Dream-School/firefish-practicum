@@ -1,3 +1,17 @@
-<h1>Welcome, <%= @user.id %>!</h1>
-<!-- avatar -->
-<p>Your email: <%= @user.email %></p>
+<div>
+  <div class="container text-center">
+    <h1 id="welcome_users" class="display-5 mb-3 text-muted">
+      Welcome, <%= @user.username || 'No username found' %>! 
+    </h1>
+    <!-- avatar -->
+    <div class="field">
+        <% if current_user.avatar.attached? %>
+          <%= image_tag current_user.avatar, alt: 'User Avatar' %>
+        <% else %>
+        <!-- Display a default avatar or placeholder image -->
+          <%= image_tag 'default_profile.png', alt: 'Default Avatar' %>
+        <% end %>
+      </div>
+    <p class="mt-3">Your email: <%= @user.email %></p>
+  </div>
+</div>

@@ -9,9 +9,17 @@
                     <!-- if user login, will be navigate through places or logout -->
                     <% if user_signed_in? %>
                     <div class="text-center">
-                        <div class="display-5 mb-5"> Welcome <%= current_user.email %> </div>
+                        <div class="display-5 mt-5 mb-5"> 
+                            Welcome <%= current_user.email %> 
+                        </div>
+
                         <%= button_to "Places" %> # places path!
-                        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger mt-5" %>
+
+                        <div class="mt-5" style="display: flex; justify-content: center;">
+                            <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger" %>
+                            <%= link_to "Edit Registration", edit_user_registration_path, class: "btn btn-outline-info mx-2" %>
+                        </div>
+
                     </div>
                     <% else %>
 
