@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :attraction do
+    attraction_place_id { "MyString" }
     name { "MyString" }
     email { "MyString" }
     phone { "MyString" }
