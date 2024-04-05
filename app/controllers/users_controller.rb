@@ -2,10 +2,8 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
   
   def dashboard
-    # Your custom logic for the user dashboard
+    # display current user
     @user = current_user
-    puts "User: #{@user.inspect}" # Check if @user is populated
-    # Add any other data you want to display on the dashboard
   end
 
   def create
