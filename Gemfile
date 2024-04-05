@@ -71,6 +71,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "webmock"
 end
 
 gem "bootstrap", "~> 5.3"
@@ -79,3 +80,6 @@ gem 'sassc-rails'
 gem 'activestorage', '~> 7.0'
 
 gem 'mini_magick'
+
+gem 'dotenv', groups: [:development, :test]
+gem 'faraday-http'
