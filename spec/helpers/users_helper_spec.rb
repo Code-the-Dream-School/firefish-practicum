@@ -1,15 +1,21 @@
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the UsersHelper. For example:
-#
-# describe UsersHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
 RSpec.describe UsersHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  # Example: Validate username format
+  # it "validates the format of a username" do
+  #   user = User.new(username: "Alice Smith")
+  #   expect(format_username(user)).to eq("Alice Smith")
+  # end
+
+  # Example: Validate email format
+  # it "validates the format of an email address" do
+  #   user = User.new(email: "user@example.com")
+  #   expect(user).to be_valid
+  # end
+
+  # Example: Validate password complexity
+  # it "validates the complexity of a password" do
+  #   user = User.new(password: "SecureP@ssw0rd")
+  #   expect(user).to be_valid
+  # end
 end

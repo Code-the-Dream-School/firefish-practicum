@@ -79,3 +79,6 @@ gem 'sassc-rails'
 gem 'activestorage', '~> 7.0'
 
 gem 'mini_magick'
+
+gem 'dotenv', groups: [:development, :test]
+gem 'faraday-http'
