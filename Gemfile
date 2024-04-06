@@ -79,6 +79,6 @@ gem 'sassc-rails'
 gem 'dotenv', groups: [:development, :test]
 gem 'faraday-http'
 
-# gem 'geocoder'
-
-# gem 'geoapi'
+group :test do
+  gem 'shoulda-matchers', '~> 6.0'
+end
