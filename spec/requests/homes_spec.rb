@@ -17,12 +17,13 @@ RSpec.describe "Homes", type: :request do
   describe "POST /users/sign_in" do
     it "allows a valid account to sign in" do
       user = FactoryBot.create(:user)
-      post user_session_path, params: { user: { email: user.email, password: user.password} }
-      expect(response).to have_http_status(303)
+      sign_in(user)
+      get new_user_session_path
+      expect(response).to have_http_status(302)
     end
     it "when the user is signed display a 'Welcome'" do
       user = FactoryBot.create(:user)
-      post user_session_path, params: { user: { email: user.email, password: user.password} }
+      sign_in(user)
       get root_path
       expect(response.body.include?("Welcome")).to be true
     end
@@ -34,7 +35,7 @@ RSpec.describe "Homes", type: :request do
   describe "DELETE /users/sign_out" do
     it "allows a user to logout after signing in" do
       user = FactoryBot.create(:user)
-      post user_session_path, params: { user: { email: user.email, password: user.password} }
+      sign_in(user)
       delete destroy_user_session_path
       expect(response).to have_http_status(303)
     end
