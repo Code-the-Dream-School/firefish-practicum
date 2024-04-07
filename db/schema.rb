@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_05_033345) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
   create_table "attractions", force: :cascade do |t|
     t.string "attraction_place_id"
     t.string "name"
@@ -22,6 +22,36 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_05_033345) do
     t.boolean "toilets"
     t.boolean "wheelchair"
     t.boolean "changing_table"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "hotels", force: :cascade do |t|
+    t.string "hotel_place_id"
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.string "website"
+    t.string "address"
+    t.string "image_url"
+    t.boolean "wheelchair"
+    t.integer "stars"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "restaurant_place_id"
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.string "website"
+    t.string "address"
+    t.string "image_url"
+    t.string "cuisine"
+    t.boolean "wheelchair"
+    t.string "indoor_seating"
+    t.string "outdoor_seating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
