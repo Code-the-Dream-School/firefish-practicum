@@ -9,7 +9,6 @@ class City < ApplicationRecord
   validates :city_place_id, presence: true
   validates :country, presence: true
   validates :city, presence: true
-  validates :user_id, presence: true
 
   # Associations
   has_many :attractions
