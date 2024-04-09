@@ -1,14 +1,14 @@
 FactoryBot.define do
   factory :attraction do
-    attraction_place_id { "MyString" }
-    name { "MyString" }
-    email { "MyString" }
-    phone { "MyString" }
-    website { "MyString" }
-    address { "MyText" }
-    image_url { "MyString" }
-    toilets { false }
-    wheelchair { false }
-    changing_table { false }
+    attraction_place_id { SecureRandom.hex(91) }
+    name { Faker::Address.city }
+    email { Faker::Internet.email }
+    phone { Faker::PhoneNumber.phone_number }
+    website { Faker::Internet.url }
+    address { Faker::Address.full_address }
+    image_url { Faker::LoremFlickr.image }
+    toilets { Faker::Boolean.boolean }
+    wheelchair { Faker::Boolean.boolean }
+    changing_table { Faker::Boolean.boolean }
   end
 end
