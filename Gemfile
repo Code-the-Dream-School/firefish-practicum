@@ -78,3 +78,7 @@ gem "bootstrap", "~> 5.3"
 gem 'sassc-rails'
 gem 'dotenv', groups: [:development, :test]
 gem 'faraday-http'
+
+group :test do
+  gem 'shoulda-matchers', '~> 6.0'
+end
