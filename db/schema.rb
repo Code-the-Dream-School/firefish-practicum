@@ -26,6 +26,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "cities", force: :cascade do |t|
+    t.string "city_place_id"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["city_place_id"], name: "index_cities_on_city_place_id", unique: true
+  end
+
   create_table "hotels", force: :cascade do |t|
     t.string "hotel_place_id"
     t.string "name"
