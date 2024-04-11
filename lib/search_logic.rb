@@ -3,45 +3,16 @@ module SearchLogic
         def get_places_from_city_string(city_name, place_type)
             city = get_city_from_name(city_name)
             places = city.public_send(place_type)
-            if places.empty?
-                response = get_place_details(city.city_place_id)
-                case place_type
-                when "attractions"
-                    attraction_place_id = response["features"].map { |place| place["properties"]["place_id"] } 
-                    name = response["features"].map { |place| place["properties"]["name"] }
-                    email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
-                    phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
-                    website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
-                    address = response["features"].map { |place| place["properties"]["formatted"] }
-                    image_url =  response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
-                    toilets = response["features"].map { |place| place["properties"]["datasource"]["raw"]["toilets"] }
-                    wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
-                    changing_table = response["features"].map { |place| place["properties"]["datasource"]["raw"]["changing_table"] }
-                when "hotels"
-                    # hotel_place_id
-                    # name
-                    # email
-                    # phone
-                    # website
-                    # address
-                    # image_url
-                    # wheelchair
-                    # stars
-                when "restaurant"
-                    # restaurant_place_id
-                    # name
-                    # email
-                    # phone
-                    # website
-                    # address
-                    # image_url
-                    # cuisine
-                    # wheelchair
-                    # indoor_seating
-                    # outdoor_seating
-                end
-            else
-                places
+            return places if !places.empty?
+
+            response = get_place_details(city.city_place_id)
+            case place_type
+            when "attractions"
+                create_attractions(response)
+            when "hotels"
+                create_hotels(response)
+            when "restaurants"
+                create_restaurants(response)
             end
         end
 
@@ -94,6 +65,57 @@ module SearchLogic
                 req.params["limit"] = 5 #using 5 for now while testing
             end
             JSON.parse(response_for_places_api.body)
+        end
+
+        def create_attractions(response)
+            attraction_place_id = response["features"].map { |place| place["properties"]["place_id"] }
+            name = response["features"].map { |place| place["properties"]["name"] }
+            email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
+            phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
+            website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
+            address = response["features"].map { |place| place["properties"]["formatted"] }
+            image_url =  response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
+            toilets = response["features"].map { |place| place["properties"]["datasource"]["raw"]["toilets"] }
+            wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
+            changing_table = response["features"].map { |place| place["properties"]["datasource"]["raw"]["changing_table"] }
+
+            attraction_place_id.zip(name, email, phone, website, address, image_url, toilets, wheelchair, changing_table) do | attraction_place_id, name, email, phone, website, address, image_url, toilets, wheelchair, changing_table |
+                city.attraction.create(attraction_place_id:, name:, email:, phone:, address:, image_url:, toilets:, wheelchair:, changing_table:)
+            end
+        end
+
+        def create_hotels(response)
+            hotel_place_id = response["features"].map { |place| place["properties"]["place_id"] }
+            name = response["features"].map { |place| place["properties"]["name"] }
+            email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
+            phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
+            website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
+            address = response["features"].map { |place| place["properties"]["formatted"] }
+            image_url = response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
+            wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
+            stars = response["features"].map { |place| place["properties"]["datasource"]["raw"]["stars"] }
+
+            hotel_place_id.zip(name, email, phone, website, address, image_url, wheelchair, stars) do |hotel_place_id, name, email, phone, website, address, image_url, wheelchair, stars|
+                city.hotel.create(attraction_place_id:, name:, email:, phone:, website:, address:, image_url:, wheelchair:, stars:)
+            end
+        end
+
+        def create_restaurants(response)
+            restaurant_place_id = response["features"].map { |place| place["properties"]["place_id"] }
+            name = response["features"].map { |place| place["properties"]["name"] }
+            email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
+            phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
+            website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
+            address = response["features"].map { |place| place["properties"]["formatted"] }
+            image_url = response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
+            cuisine = response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
+            wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
+            indoor_seating = response["features"].map { |place| place["properties"]["datasource"]["raw"]["indoor_seating"] }
+            outdoor_seating = response["features"].map { |place| place["properties"]["datasource"]["raw"]["outdoor_seating"] }
+
+            restaurant_place_id.zip(name, email, phone, website, address, image_url, cuisine, wheelchair, indoor_seating, outdoor_seating) do |restaurant_place_id, name, email, phone, website, address, image_url, cuisine, wheelchair, indoor_seating, outdoor_seating|
+                city.restaurant.create(restaurant_place_id:, name:, email:, phone:, website:, address:, image_url:, cuisine:, wheelchair:, indoor_seating:, outdoor_seating:)
+            end
         end
 
     end
