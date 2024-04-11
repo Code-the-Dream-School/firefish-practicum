@@ -80,6 +80,6 @@ gem 'sassc-rails'
 gem 'dotenv', groups: [:development, :test]
 gem 'faraday-http'
 
-group :test do
-  gem 'shoulda-matchers', '~> 6.0'
-end
+# group :test do
+#   gem 'shoulda-matchers', '~> 6.0'
+# end
