@@ -1,5 +1,6 @@
 FactoryBot.define do
   factory :restaurant do
+    association :city
     restaurant_place_id { SecureRandom.hex(91) }
     name { Faker::Address.city }
     email { Faker::Internet.email }

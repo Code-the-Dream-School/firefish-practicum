@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_10_212019) do
   create_table "attractions", force: :cascade do |t|
     t.string "attraction_place_id"
     t.string "name"
@@ -24,6 +24,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
     t.boolean "changing_table"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_attractions_on_city_id"
   end
 
   create_table "cities", force: :cascade do |t|
@@ -46,6 +48,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
     t.integer "stars"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_hotels_on_city_id"
   end
 
   create_table "restaurants", force: :cascade do |t|
@@ -62,6 +66,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
     t.string "outdoor_seating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_restaurants_on_city_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -76,4 +82,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_07_012225) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "attractions", "cities"
+  add_foreign_key "hotels", "cities"
+  add_foreign_key "restaurants", "cities"
 end
