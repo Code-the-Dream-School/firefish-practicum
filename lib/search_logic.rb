@@ -2,16 +2,21 @@ module SearchLogic
     class << self
         def get_places_from_city_string(city_name, place_type)
             city = get_city_from_name(city_name)
-            places = city.public_send(place_type)
+            places = city.public_send(place_type).to_a #city.attractions.to_a
             return places if !places.empty?
 
-            response = get_place_details(city.city_place_id)
             case place_type
             when "attractions"
-                create_attractions(response)
+                category = "tourism.attraction"
+                response = get_place_details(category, city.city_place_id)
+                create_attractions(response, city)
             when "hotels"
-                create_hotels(response)
+                category = "accommodation.hotel"
+                response = get_place_details(category, city.city_place_id)
+                create_hotels(response, city)
             when "restaurants"
+                category = "catering.restaurant"
+                response = get_place_details(category, city.city_place_id)
                 create_restaurants(response)
             end
         end
@@ -49,72 +54,72 @@ module SearchLogic
             City.new(city_place_id: city_place_id, name: city_name)
         end
 
-        def get_place_details(place_type, city_place_id)
-            case place_type
-            when "attractions"
-                category = "tourism.attraction"
-            when "hotels"
-                category = "accommodation.hotel"
-            when "restaurants"
-                category = "catering.restaurant"
-            end
-
+        def get_place_details(category, city_place_id)
             response_for_places_api = GeoapifyClient.connection.get("/v2/places") do |req|
                 req.params["categories"] = category
                 req.params["filter"] = "place:#{city_place_id}"
-                req.params["limit"] = 5 #using 5 for now while testing
+                req.params["limit"] = 20
             end
             JSON.parse(response_for_places_api.body)
         end
 
-        def create_attractions(response)
-            attraction_place_id = response["features"].map { |place| place["properties"]["place_id"] }
-            name = response["features"].map { |place| place["properties"]["name"] }
-            email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
-            phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
-            website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
-            address = response["features"].map { |place| place["properties"]["formatted"] }
-            image_url =  response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
-            toilets = response["features"].map { |place| place["properties"]["datasource"]["raw"]["toilets"] }
-            wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
-            changing_table = response["features"].map { |place| place["properties"]["datasource"]["raw"]["changing_table"] }
+        def create_attractions(response, city)
+            response["features"].map do |place| 
+                props = place["properties"]
+                dataraw = props["datasource"]["raw"]
 
-            attraction_place_id.zip(name, email, phone, website, address, image_url, toilets, wheelchair, changing_table) do | attraction_place_id, name, email, phone, website, address, image_url, toilets, wheelchair, changing_table |
-                city.attraction.create(attraction_place_id:, name:, email:, phone:, address:, image_url:, toilets:, wheelchair:, changing_table:)
+                attraction_place_id = props["place_id"]
+                name = props["name"]
+                email = dataraw["email"]
+                phone = dataraw["phone"]
+                website = dataraw["website"]
+                address = props["formatted"]
+                image_url = dataraw["image"]
+                toilets = dataraw["toilets"]
+                wheelchair = dataraw["wheelchair"]
+                changing_table = dataraw["changing_table"]
+
+                city.attractions.create(attraction_place_id:, name:, email:, phone:, website:, address:, image_url:, toilets:, wheelchair:, changing_table:)
             end
         end
 
-        def create_hotels(response)
-            hotel_place_id = response["features"].map { |place| place["properties"]["place_id"] }
-            name = response["features"].map { |place| place["properties"]["name"] }
-            email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
-            phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
-            website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
-            address = response["features"].map { |place| place["properties"]["formatted"] }
-            image_url = response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
-            wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
-            stars = response["features"].map { |place| place["properties"]["datasource"]["raw"]["stars"] }
+        def create_hotels(response, city)
+            response["features"].map do |place| 
+                props = place["properties"]
+                dataraw = props["datasource"]["raw"]
+                
+                hotel_place_id = props["place_id"]
+                name = props["name"]
+                email = dataraw["email"]
+                phone = dataraw["phone"]
+                website = dataraw["website"]
+                address = props["formatted"]
+                image_url = dataraw["image"]
+                wheelchair = dataraw["wheelchair"]
+                stars = dataraw["stars"]
 
-            hotel_place_id.zip(name, email, phone, website, address, image_url, wheelchair, stars) do |hotel_place_id, name, email, phone, website, address, image_url, wheelchair, stars|
-                city.hotel.create(attraction_place_id:, name:, email:, phone:, website:, address:, image_url:, wheelchair:, stars:)
+                city.hotels.create(hotel_place_id:, name:, email:, phone:, website:, address:, image_url:, wheelchair:, stars:)
             end
         end
 
         def create_restaurants(response)
-            restaurant_place_id = response["features"].map { |place| place["properties"]["place_id"] }
-            name = response["features"].map { |place| place["properties"]["name"] }
-            email = response["features"].map { |place| place["properties"]["datasource"]["raw"]["email"] }
-            phone = response["features"].map { |place| place["properties"]["datasource"]["raw"]["phone"] }
-            website = response["features"].map { |place| place["properties"]["datasource"]["raw"]["website"] }
-            address = response["features"].map { |place| place["properties"]["formatted"] }
-            image_url = response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
-            cuisine = response["features"].map { |place| place["properties"]["datasource"]["raw"]["image"] }
-            wheelchair = response["features"].map { |place| place["properties"]["datasource"]["raw"]["wheelchair"] }
-            indoor_seating = response["features"].map { |place| place["properties"]["datasource"]["raw"]["indoor_seating"] }
-            outdoor_seating = response["features"].map { |place| place["properties"]["datasource"]["raw"]["outdoor_seating"] }
+            response["features"].map do |place| 
+                props = place["properties"]
+                dataraw = props["datasource"]["raw"]
 
-            restaurant_place_id.zip(name, email, phone, website, address, image_url, cuisine, wheelchair, indoor_seating, outdoor_seating) do |restaurant_place_id, name, email, phone, website, address, image_url, cuisine, wheelchair, indoor_seating, outdoor_seating|
-                city.restaurant.create(restaurant_place_id:, name:, email:, phone:, website:, address:, image_url:, cuisine:, wheelchair:, indoor_seating:, outdoor_seating:)
+                restaurant_place_id = props["place_id"]
+                name = props["name"]
+                email = dataraw["email"]
+                phone = dataraw["phone"]
+                website = dataraw["website"]
+                address = props["formatted"]
+                image_url = dataraw["image"]
+                cuisine = dataraw["cuisine"]
+                wheelchair = dataraw["wheelchair"]
+                indoor_seating = dataraw["indoor_seating"]
+                outdoor_seating = dataraw["outdoor_seating"]
+
+                city.restaurants.create(restaurant_place_id:, name:, email:, phone:, website:, address:, image_url:, cuisine:, wheelchair:, indoor_seating:, outdoor_seating:)
             end
         end
 
