@@ -17,11 +17,11 @@ module SearchLogic
             when "restaurants"
                 category = "catering.restaurant"
                 response = get_place_details(category, city.city_place_id)
-                create_restaurants(response)
+                create_restaurants(response, city)
             end
         end
 
-        #private
+        private
 
         def get_city_from_name(city_name)
             city = City.find_by(name: city_name)
@@ -102,7 +102,7 @@ module SearchLogic
             end
         end
 
-        def create_restaurants(response)
+        def create_restaurants(response, city)
             response["features"].map do |place| 
                 props = place["properties"]
                 dataraw = props["datasource"]["raw"]

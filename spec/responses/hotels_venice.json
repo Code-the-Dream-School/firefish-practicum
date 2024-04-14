@@ -1,0 +1,1592 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bauer Palazzo",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "1459",
+                "lon": 12.335844195932896,
+                "lat": 45.4328621,
+                "state_code": "VEN",
+                "formatted": "Bauer Palazzo, 1459, 30124 Venice VE, Italy",
+                "address_line1": "Bauer Palazzo",
+                "address_line2": "1459, 30124 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "building",
+                    "building.accommodation"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Bauer Palazzo",
+                        "email": "info@bauervenezia.com",
+                        "phone": "+39 041 5207022",
+                        "rooms": 109,
+                        "stars": 5,
+                        "osm_id": 138801290,
+                        "tourism": "hotel",
+                        "website": "https://www.bauervenezia.com/",
+                        "building": "yes",
+                        "osm_type": "w",
+                        "wikidata": "Q56256091",
+                        "addr:city": "Venezia",
+                        "wikipedia": "en:Bauer Hotel (Venice)",
+                        "addr:place": "San Marco",
+                        "addr:country": "IT",
+                        "addr:postcode": 30124,
+                        "addr:housenumber": 1459,
+                        "air_conditioning": "yes",
+                        "wikimedia_commons": "Category:Palazzo Bauer (Venice)"
+                    }
+                },
+                "website": "https://www.bauervenezia.com/",
+                "contact": {
+                    "phone": "+39 041 5207022",
+                    "email": "info@bauervenezia.com"
+                },
+                "facilities": {
+                    "air_conditioning": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q56256091",
+                    "wikipedia": "en:Bauer Hotel (Venice)",
+                    "wikimedia_commons": "Category:Palazzo Bauer (Venice)"
+                },
+                "accommodation": {
+                    "stars": 5,
+                    "rooms": 109
+                },
+                "place_id": "51982a3cc5f3ab284059507e7a0668b74640f00102f9018af045080000000092030d42617565722050616c617a7a6f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.335844195932893,
+                    45.432862100421175
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hilton Garden Inn Venice Mestre San Giuliano",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Mestre",
+                "postcode": "30173",
+                "district": "Quartiere San Giuseppe",
+                "suburb": "Mestre-Carpenedo",
+                "street": "Via Orlanda",
+                "housenumber": "1",
+                "lon": 12.269838793223489,
+                "lat": 45.48005955,
+                "state_code": "VEN",
+                "formatted": "Hilton Garden Inn Venice Mestre San Giuliano, Via Orlanda, 1, 30173 Venice VE, Italy",
+                "address_line1": "Hilton Garden Inn Venice Mestre San Giuliano",
+                "address_line2": "Via Orlanda, 1, 30173 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "building",
+                    "building.accommodation",
+                    "internet_access"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Hilton Garden Inn Venice Mestre San Giuliano",
+                        "brand": "Hilton Garden Inn",
+                        "email": "info@hgivenice.com",
+                        "phone": "+39-041-5455901",
+                        "rooms": 136,
+                        "stars": 4,
+                        "osm_id": 190972034,
+                        "tourism": "hotel",
+                        "website": "https://www.hilton.com/en/hotels/vcegigi-hilton-garden-inn-venice-mestre-san-giuliano/",
+                        "building": "yes",
+                        "operator": "Hilton Hotels",
+                        "osm_type": "w",
+                        "wikidata": "Q54554754",
+                        "addr:city": "Mestre",
+                        "addr:street": "Via Orlanda",
+                        "addr:postcode": 30173,
+                        "brand:wikidata": "Q1162859",
+                        "internet_access": "wlan",
+                        "addr:housenumber": 1,
+                        "air_conditioning": "yes",
+                        "contact:facebook": "https://www.facebook.com/hiltongardeninnvenice/",
+                        "contact:instagram": "https://www.instagram.com/hiltongardeninnvenice/"
+                    }
+                },
+                "website": "https://www.hilton.com/en/hotels/vcegigi-hilton-garden-inn-venice-mestre-san-giuliano/",
+                "brand": "Hilton Garden Inn",
+                "brand_details": {
+                    "wikidata": "Q1162859"
+                },
+                "operator": "Hilton Hotels",
+                "contact": {
+                    "phone": "+39-041-5455901",
+                    "email": "info@hgivenice.com"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "air_conditioning": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q54554754"
+                },
+                "accommodation": {
+                    "stars": 4,
+                    "rooms": 136
+                },
+                "place_id": "518c2c704f288a2840594a95629772bd4640f00102f9018200620b0000000092032c48696c746f6e2047617264656e20496e6e2056656e696365204d65737472652053616e204769756c69616e6f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.269838793223492,
+                    45.48005955041533
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Scandinavia",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "5240",
+                "lon": 12.3413615,
+                "lat": 45.4374836,
+                "state_code": "VEN",
+                "formatted": "Hotel Scandinavia, 5240, 30122 Venice VE, Italy",
+                "address_line1": "Hotel Scandinavia",
+                "address_line2": "5240, 30122 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Hotel Scandinavia",
+                        "email": "info@scandinaviahotel.com",
+                        "phone": "+39 041 5223507",
+                        "osm_id": 676820113,
+                        "tourism": "hotel",
+                        "website": "https://www.scandinaviahotel.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q111124080",
+                        "addr:place": "Castello",
+                        "addr:postcode": 30122,
+                        "addr:housenumber": 5240,
+                        "air_conditioning": "yes"
+                    }
+                },
+                "website": "https://www.scandinaviahotel.com/",
+                "contact": {
+                    "phone": "+39 041 5223507",
+                    "email": "info@scandinaviahotel.com"
+                },
+                "facilities": {
+                    "air_conditioning": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111124080"
+                },
+                "place_id": "511c3a3defc6ae284059e12b6e76ffb74640f00103f9019174572800000000920311486f74656c205363616e64696e61766961"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.341361499999998,
+                    45.4374836004206
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Staycity Aparthotel",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Mestre",
+                "postcode": "30172",
+                "suburb": "Mestre-Carpenedo",
+                "street": "Via Ca' Marcello",
+                "housenumber": "8l",
+                "lon": 12.238736574310185,
+                "lat": 45.481012750000005,
+                "state_code": "VEN",
+                "formatted": "Staycity Aparthotel, Via Ca' Marcello, 8l, 30172 Venice VE, Italy",
+                "address_line1": "Staycity Aparthotel",
+                "address_line2": "Via Ca' Marcello, 8l, 30172 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "building",
+                    "building.accommodation",
+                    "internet_access"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.building",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Staycity Aparthotel",
+                        "email": "mestre.info@staycity.com",
+                        "phone": "+39 041 884 0040",
+                        "stars": 4,
+                        "osm_id": 694526209,
+                        "tourism": "hotel",
+                        "website": "https://www.staycity.com/venice/mestre/",
+                        "building": "hotel",
+                        "osm_type": "w",
+                        "wikidata": "Q111878713",
+                        "addr:city": "Mestre",
+                        "addr:state": "Italia",
+                        "addr:street": "Via Ca' Marcello",
+                        "addr:country": "IT",
+                        "opening_date": "2019/08/12",
+                        "addr:postcode": 30172,
+                        "addr:province": "Venezia",
+                        "building:levels": 6,
+                        "internet_access": "wlan",
+                        "addr:housenumber": "8l",
+                        "air_conditioning": "yes"
+                    }
+                },
+                "website": "https://www.staycity.com/venice/mestre/",
+                "contact": {
+                    "phone": "+39 041 884 0040",
+                    "email": "mestre.info@staycity.com"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "air_conditioning": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111878713"
+                },
+                "accommodation": {
+                    "stars": 4
+                },
+                "building": {
+                    "levels": 6,
+                    "type": "hotel"
+                },
+                "place_id": "51e60a26ae3b7a28405906ff67d391bd4640f00102f90101a16529000000009203135374617963697479204170617274686f74656c"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.238736574310177,
+                    45.48101275041522
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Oltre Il Giardino",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30125",
+                "district": "San Polo",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "2542",
+                "lon": 12.32769984798888,
+                "lat": 45.43787665,
+                "state_code": "VEN",
+                "formatted": "Oltre Il Giardino, 2542, 30125 Venice VE, Italy",
+                "address_line1": "Oltre Il Giardino",
+                "address_line2": "2542, 30125 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "building",
+                    "building.accommodation",
+                    "internet_access",
+                    "internet_access.free",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Oltre Il Giardino",
+                        "email": "info@oltreilgiardino-venezia.com",
+                        "phone": "+39 041 2750015",
+                        "osm_id": 732570282,
+                        "smoking": "no",
+                        "tourism": "hotel",
+                        "website": "https://www.oltreilgiardino-venezia.com",
+                        "building": "yes",
+                        "osm_type": "w",
+                        "wikidata": "Q58404715",
+                        "addr:city": "Venezia",
+                        "addr:place": "San Polo",
+                        "wheelchair": "limited",
+                        "addr:country": "IT",
+                        "addr:postcode": 30125,
+                        "internet_access": "yes",
+                        "addr:housenumber": 2542,
+                        "wikimedia_commons": "Category:Palazzo Soranzo a San Stin (Venice)",
+                        "internet_access:fee": "no"
+                    }
+                },
+                "website": "https://www.oltreilgiardino-venezia.com",
+                "contact": {
+                    "phone": "+39 041 2750015",
+                    "email": "info@oltreilgiardino-venezia.com"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    },
+                    "smoking": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q58404715",
+                    "wikimedia_commons": "Category:Palazzo Soranzo a San Stin (Venice)"
+                },
+                "place_id": "5166084446c8a7284059809e92570cb84640f00102f901aa22aa2b000000009203114f6c74726520496c204769617264696e6f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.327699847988878,
+                    45.43787665042055
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Leonardo Royal Hotel",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Mestre",
+                "postcode": "30172",
+                "suburb": "Mestre-Carpenedo",
+                "street": "Via Ca' Marcello",
+                "housenumber": "6",
+                "lon": 12.237257212525003,
+                "lat": 45.4814427,
+                "state_code": "VEN",
+                "formatted": "Leonardo Royal Hotel, Via Ca' Marcello, 6, 30172 Venice VE, Italy",
+                "address_line1": "Leonardo Royal Hotel",
+                "address_line2": "Via Ca' Marcello, 6, 30172 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "internet_access",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "fax": "+39 02 3310 7399",
+                        "name": "Leonardo Royal Hotel",
+                        "brand": "Leonardo Royal Hotel",
+                        "email": "info.royalvenice@leonardo-hotels.com",
+                        "phone": "+39 041 87261",
+                        "rooms": 244,
+                        "stars": 4,
+                        "osm_id": 1083608306,
+                        "tourism": "hotel",
+                        "website": "https://www.leonardo-hotels.it/",
+                        "osm_type": "w",
+                        "wikidata": "Q111878714",
+                        "addr:city": "Mestre",
+                        "addr:state": "Italia",
+                        "wheelchair": "yes",
+                        "addr:street": "Via Ca' Marcello",
+                        "addr:country": "IT",
+                        "addr:postcode": 30172,
+                        "addr:province": "Venezia",
+                        "brand:wikidata": "Q1819101",
+                        "internet_access": "wlan",
+                        "addr:housenumber": 6
+                    }
+                },
+                "website": "https://www.leonardo-hotels.it/",
+                "brand": "Leonardo Royal Hotel",
+                "brand_details": {
+                    "wikidata": "Q1819101"
+                },
+                "contact": {
+                    "phone": "+39 041 87261",
+                    "email": "info.royalvenice@leonardo-hotels.com",
+                    "fax": "+39 02 3310 7399"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "wheelchair": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111878714"
+                },
+                "accommodation": {
+                    "stars": 4,
+                    "rooms": 244
+                },
+                "place_id": "51ee1101c779792840592c9716ea9fbd4640f00102f901f28c9640000000009203144c656f6e6172646f20526f79616c20486f74656c"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.237257212525005,
+                    45.48144270041516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "American",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta Bragadin",
+                "housenumber": "628",
+                "lon": 12.3297979,
+                "lat": 45.4303084,
+                "state_code": "VEN",
+                "formatted": "American, Fondamenta Bragadin, 628, 30123 Venice VE, Italy",
+                "address_line1": "American",
+                "address_line2": "Fondamenta Bragadin, 628, 30123 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "internet_access",
+                    "internet_access.free"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "American",
+                        "phone": "+39 041 520 4733",
+                        "osm_id": 1170924649,
+                        "smoking": "outside",
+                        "tourism": "hotel",
+                        "website": "https://www.hotelamerican.it",
+                        "alt_name": "American Dinesen Hotel",
+                        "osm_type": "n",
+                        "wikidata": "Q111412828",
+                        "addr:street": "Fondamenta Bragadin",
+                        "addr:housenumber": 628,
+                        "internet_access:fee": "no"
+                    }
+                },
+                "website": "https://www.hotelamerican.it",
+                "name_other": {
+                    "alt_name": "American Dinesen Hotel"
+                },
+                "contact": {
+                    "phone": "+39 041 520 4733"
+                },
+                "facilities": {
+                    "smoking": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111412828"
+                },
+                "place_id": "5136943545dba82840598f807d5814b74640f00103f90169e4ca4500000000920308416d65726963616e"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.329797899999999,
+                    45.43030840042149
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Danieli",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Riva degli Schiavoni",
+                "housenumber": "4196",
+                "lon": 12.3420638,
+                "lat": 45.4338677,
+                "state_code": "VEN",
+                "formatted": "Danieli, Riva degli Schiavoni, 4196, 30122 Venice VE, Italy",
+                "address_line1": "Danieli",
+                "address_line2": "Riva degli Schiavoni, 4196, 30122 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Danieli",
+                        "email": "danieli@luxurycollection.com",
+                        "phone": "+39 041 5226480",
+                        "stars": 5,
+                        "osm_id": 1521846677,
+                        "tourism": "hotel",
+                        "website": "https://www.danielihotelvenice.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q642615",
+                        "wikipedia": "en:Hotel Danieli",
+                        "addr:place": "Castello",
+                        "addr:street": "Riva degli Schiavoni",
+                        "addr:postcode": 30122,
+                        "addr:housenumber": 4196,
+                        "air_conditioning": "yes",
+                        "wikimedia_commons": "Category:Hotel Danieli (Venice)"
+                    }
+                },
+                "website": "https://www.danielihotelvenice.com/",
+                "contact": {
+                    "phone": "+39 041 5226480",
+                    "email": "danieli@luxurycollection.com"
+                },
+                "facilities": {
+                    "air_conditioning": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q642615",
+                    "wikipedia": "en:Hotel Danieli",
+                    "wikimedia_commons": "Category:Hotel Danieli (Venice)"
+                },
+                "accommodation": {
+                    "stars": 5
+                },
+                "place_id": "517d4a84fc22af284059ae0c10fa88b74640f00103f9019589b55a0000000092030744616e69656c69"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3420638,
+                    45.43386770042103
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Il Moro di Venezia",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "152",
+                "lon": 12.3233242,
+                "lat": 45.4421182,
+                "state_code": "VEN",
+                "formatted": "Hotel Il Moro di Venezia, 152, 30121 Venice VE, Italy",
+                "address_line1": "Hotel Il Moro di Venezia",
+                "address_line2": "152, 30121 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Hotel Il Moro di Venezia",
+                        "email": "info@hotelilmorodivenezia.com",
+                        "phone": "+39 041 0985730",
+                        "osm_id": 1522351510,
+                        "tourism": "hotel",
+                        "website": "http://www.hotelilmorodivenezia.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q111124067",
+                        "addr:place": "Cannaregio",
+                        "wheelchair": "limited",
+                        "addr:postcode": 30121,
+                        "contact:skype": "hotelilmoro.venezia",
+                        "addr:housenumber": 152,
+                        "contact:facebook": "http://www.facebook.com/HotelIlMoroDiVenezia"
+                    }
+                },
+                "website": "http://www.hotelilmorodivenezia.com/",
+                "contact": {
+                    "phone": "+39 041 0985730",
+                    "email": "info@hotelilmorodivenezia.com"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111124067"
+                },
+                "place_id": "51bf02e2bf8aa52840599ee2455497b84640f00103f901963dbd5a00000000920318486f74656c20496c204d6f726f2064692056656e657a6961"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3233242,
+                    45.44211820042004
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Donà Palace",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "391",
+                "lon": 12.3400122,
+                "lat": 45.435601,
+                "state_code": "VEN",
+                "formatted": "Donà Palace, 391, 30124 Venice VE, Italy",
+                "address_line1": "Donà Palace",
+                "address_line2": "391, 30124 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "internet_access",
+                    "internet_access.free",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Donà Palace",
+                        "email": "info@donapalace.it",
+                        "phone": "+39 041 2743511",
+                        "stars": 4,
+                        "osm_id": 1608639576,
+                        "smoking": "no",
+                        "tourism": "hotel",
+                        "website": "https://www.donapalace.it/",
+                        "osm_type": "n",
+                        "wikidata": "Q111412861",
+                        "addr:city": "Venezia",
+                        "addr:place": "San Marco",
+                        "wheelchair": "yes",
+                        "addr:country": "IT",
+                        "addr:postcode": 30124,
+                        "internet_access": "wlan",
+                        "addr:housenumber": 391,
+                        "internet_access:fee": "no"
+                    }
+                },
+                "website": "https://www.donapalace.it/",
+                "contact": {
+                    "phone": "+39 041 2743511",
+                    "email": "info@donapalace.it"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "wheelchair": true,
+                    "smoking": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111412861"
+                },
+                "accommodation": {
+                    "stars": 4
+                },
+                "place_id": "51657b3e1416ae284059c87409c6c1b74640f00103f90158e4e15f0000000092030c446f6ec3a02050616c616365"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.340012199999999,
+                    45.43560100042083
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hilton Molino Stucky Venice",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30133",
+                "district": "Giudecca",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "810",
+                "lon": 12.3199358,
+                "lat": 45.4282422,
+                "state_code": "VEN",
+                "formatted": "Hilton Molino Stucky Venice, 810, 30133 Venice VE, Italy",
+                "address_line1": "Hilton Molino Stucky Venice",
+                "address_line2": "810, 30133 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel",
+                    "internet_access"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Hilton Molino Stucky Venice",
+                        "brand": "Hilton",
+                        "email": "venice.info@hilton.com",
+                        "phone": "+39 041 272 3311",
+                        "rooms": 379,
+                        "stars": 5,
+                        "osm_id": 1860869003,
+                        "smoking": "no",
+                        "tourism": "hotel",
+                        "website": "https://www.hilton.com/en/hotels/vcehihi-hilton-molino-stucky-venice/",
+                        "operator": "Hilton",
+                        "osm_type": "n",
+                        "wikidata": "Q1943482",
+                        "addr:city": "Venice",
+                        "wikipedia": "en:Molino Stucky",
+                        "addr:place": "Giudecca",
+                        "addr:country": "IT",
+                        "addr:postcode": 30133,
+                        "brand:wikidata": "Q598884",
+                        "contact:twitter": "https://twitter.com/HiltonVenice",
+                        "internet_access": "yes",
+                        "addr:housenumber": 810,
+                        "contact:facebook": "https://www.facebook.com/hiltonmolinostuckyvenice"
+                    }
+                },
+                "website": "https://www.hilton.com/en/hotels/vcehihi-hilton-molino-stucky-venice/",
+                "brand": "Hilton",
+                "brand_details": {
+                    "wikidata": "Q598884"
+                },
+                "operator": "Hilton",
+                "contact": {
+                    "phone": "+39 041 272 3311",
+                    "email": "venice.info@hilton.com"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "smoking": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q1943482",
+                    "wikipedia": "en:Molino Stucky"
+                },
+                "accommodation": {
+                    "stars": 5,
+                    "rooms": 379
+                },
+                "place_id": "51a1a30ba0cea328405909caf2a3d0b64640f00103f9018b9bea6e0000000092031b48696c746f6e204d6f6c696e6f20537475636b792056656e696365"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.319935799999998,
+                    45.42824220042173
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Carnival Palace",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "929",
+                "lon": 12.3203839,
+                "lat": 45.4460813,
+                "state_code": "VEN",
+                "formatted": "Carnival Palace, 929, 30121 Venice VE, Italy",
+                "address_line1": "Carnival Palace",
+                "address_line2": "929, 30121 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Carnival Palace",
+                        "email": "info@carnivalpalace.com",
+                        "phone": "+39 041 2440320",
+                        "stars": 4,
+                        "osm_id": 1909741059,
+                        "tourism": "hotel",
+                        "website": "https://www.carnivalpalace.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q66754590",
+                        "addr:place": "Cannaregio",
+                        "addr:postcode": 30121,
+                        "addr:housenumber": 929,
+                        "wikimedia_commons": "Category:Palazzo Valier Gonella (Venice)"
+                    }
+                },
+                "website": "https://www.carnivalpalace.com/",
+                "contact": {
+                    "phone": "+39 041 2440320",
+                    "email": "info@carnivalpalace.com"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q66754590",
+                    "wikimedia_commons": "Category:Palazzo Valier Gonella (Venice)"
+                },
+                "accommodation": {
+                    "stars": 4
+                },
+                "place_id": "517254c95b09a42840595f542a3119b94640f00103f9010356d4710000000092030f4361726e6976616c2050616c616365"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3203839,
+                    45.44608130041956
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Lion Morosini",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "5700",
+                "lon": 12.3366552,
+                "lat": 45.4394389,
+                "state_code": "VEN",
+                "formatted": "Hotel Lion Morosini, 5700, 30121 Venice VE, Italy",
+                "address_line1": "Hotel Lion Morosini",
+                "address_line2": "5700, 30121 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Hotel Lion Morosini",
+                        "osm_id": 2205844953,
+                        "tourism": "hotel",
+                        "website": "https://www.lionmorosinipalace.it/",
+                        "osm_type": "n",
+                        "wikidata": "Q55440819",
+                        "addr:place": "Cannaregio",
+                        "addr:postcode": 30121,
+                        "contact:email": "info@lionmorosinipalace.it",
+                        "addr:housenumber": 5700,
+                        "wikimedia_commons": "Category:Palazzo Lion Morosini (Venice)"
+                    }
+                },
+                "website": "https://www.lionmorosinipalace.it/",
+                "contact": {
+                    "email": "info@lionmorosinipalace.it"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q55440819",
+                    "wikimedia_commons": "Category:Palazzo Lion Morosini (Venice)"
+                },
+                "place_id": "51810e04125eac284059a4f2ac883fb84640f00103f901d9857a8300000000920313486f74656c204c696f6e204d6f726f73696e69"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.336655199999997,
+                    45.439438900420356
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Palazzo Paruta",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "3824",
+                "lon": 12.331209,
+                "lat": 45.434403,
+                "state_code": "VEN",
+                "formatted": "Palazzo Paruta, 3824, 30124 Venice VE, Italy",
+                "address_line1": "Palazzo Paruta",
+                "address_line2": "3824, 30124 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Palazzo Paruta",
+                        "email": "booking@palazzoparuta.com",
+                        "phone": "+39 041 2410835",
+                        "stars": 4,
+                        "osm_id": 2354799124,
+                        "tourism": "hotel",
+                        "website": "https://palazzoparuta.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q111412843",
+                        "addr:city": "Venezia",
+                        "addr:place": "San Marco",
+                        "addr:country": "IT",
+                        "addr:postcode": 30124,
+                        "addr:housenumber": 3824
+                    }
+                },
+                "website": "https://palazzoparuta.com/",
+                "contact": {
+                    "phone": "+39 041 2410835",
+                    "email": "booking@palazzoparuta.com"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111412843"
+                },
+                "accommodation": {
+                    "stars": 4
+                },
+                "place_id": "511f48de3994a9284059d40b7c849ab74640f00103f90114625b8c0000000092030e50616c617a7a6f20506172757461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.331209,
+                    45.434403000420986
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Antiche Figure",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30135",
+                "district": "Santa Croce",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "687",
+                "lon": 12.3220307,
+                "lat": 45.4402652,
+                "state_code": "VEN",
+                "formatted": "Hotel Antiche Figure, 687, 30135 Venice VE, Italy",
+                "address_line1": "Hotel Antiche Figure",
+                "address_line2": "687, 30135 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "fax": "+39 041 2756640",
+                        "name": "Hotel Antiche Figure",
+                        "email": "info@hotelantichefigure.it",
+                        "phone": "+39 041 2759486",
+                        "stars": 3,
+                        "osm_id": 2704266279,
+                        "tourism": "hotel",
+                        "website": "https://www.hotelantichefigure.it/",
+                        "osm_type": "n",
+                        "wikidata": "Q56240079",
+                        "addr:place": "Santa Croce",
+                        "addr:postcode": 30135,
+                        "addr:housenumber": 687,
+                        "wikimedia_commons": "Category:Hotel Antiche Figure (Venice)"
+                    }
+                },
+                "website": "https://www.hotelantichefigure.it/",
+                "contact": {
+                    "phone": "+39 041 2759486",
+                    "email": "info@hotelantichefigure.it",
+                    "fax": "+39 041 2756640"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q56240079",
+                    "wikimedia_commons": "Category:Hotel Antiche Figure (Venice)"
+                },
+                "accommodation": {
+                    "stars": 3
+                },
+                "place_id": "51b09d3935e1a42840599baf2e9c5ab84640f00103f90127d42fa100000000920314486f74656c20416e746963686520466967757265"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3220307,
+                    45.440265200420264
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Papadopoli",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30135",
+                "district": "Santa Croce",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta del Monastero",
+                "housenumber": "245",
+                "lon": 12.3212972,
+                "lat": 45.4379855,
+                "state_code": "VEN",
+                "formatted": "Hotel Papadopoli, Fondamenta del Monastero, 245, 30135 Venice VE, Italy",
+                "address_line1": "Hotel Papadopoli",
+                "address_line2": "Fondamenta del Monastero, 245, 30135 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "fax": "+39 041 710394",
+                        "name": "Hotel Papadopoli",
+                        "email": "h1313@accor.com",
+                        "phone": "+39 041 710400",
+                        "stars": 4,
+                        "osm_id": 2704266281,
+                        "tourism": "hotel",
+                        "website": "https://www.accorhotels.com/gb/hotel-1313-hotel-papadopoli-venezia-mgallery-collection/index.shtml",
+                        "operator": "Accor Hotels",
+                        "osm_type": "n",
+                        "wikidata": "Q56604203",
+                        "addr:place": "Santa Croce",
+                        "addr:street": "Fondamenta del Monastero",
+                        "addr:postcode": 30135,
+                        "addr:housenumber": 245,
+                        "wikimedia_commons": "Category:Hotel Papadopoli (Venice)"
+                    }
+                },
+                "website": "https://www.accorhotels.com/gb/hotel-1313-hotel-papadopoli-venezia-mgallery-collection/index.shtml",
+                "operator": "Accor Hotels",
+                "contact": {
+                    "phone": "+39 041 710400",
+                    "email": "h1313@accor.com",
+                    "fax": "+39 041 710394"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q56604203",
+                    "wikimedia_commons": "Category:Hotel Papadopoli (Venice)"
+                },
+                "accommodation": {
+                    "stars": 4
+                },
+                "place_id": "51be970c1181a4284059d736ace80fb84640f00103f90129d42fa100000000920310486f74656c2050617061646f706f6c69"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3212972,
+                    45.437985500420545
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Villa Pannonia",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30126",
+                "suburb": "Lido-Pellestrina",
+                "street": "Via Doge Domenico Michiel",
+                "housenumber": "48",
+                "lon": 12.3722086,
+                "lat": 45.4152025,
+                "state_code": "VEN",
+                "formatted": "Villa Pannonia, Via Doge Domenico Michiel, 48, 30126 Venice VE, Italy",
+                "address_line1": "Villa Pannonia",
+                "address_line2": "Via Doge Domenico Michiel, 48, 30126 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Villa Pannonia",
+                        "email": "info@hotelvillapannonia.it",
+                        "phone": "+39 041 5260162",
+                        "osm_id": 2768510277,
+                        "tourism": "hotel",
+                        "website": "https://www.hotelvillapannonia.it/",
+                        "osm_type": "n",
+                        "wikidata": "Q111878644",
+                        "addr:city": "Venezia",
+                        "addr:place": "Lido di Venezia",
+                        "addr:street": "Via Doge Michiel",
+                        "addr:country": "IT",
+                        "addr:postcode": 30126,
+                        "addr:housenumber": 48
+                    }
+                },
+                "website": "https://www.hotelvillapannonia.it/",
+                "contact": {
+                    "phone": "+39 041 5260162",
+                    "email": "info@hotelvillapannonia.it"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111878644"
+                },
+                "place_id": "517494282092be2840598e44045b25b54640f00103f901451d04a50000000092030e56696c6c612050616e6e6f6e6961"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3722086,
+                    45.41520250042332
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Venice Times hotel",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "99d",
+                "lon": 12.3215095,
+                "lat": 45.4422527,
+                "state_code": "VEN",
+                "formatted": "Venice Times hotel, 99d, 30121 Venice VE, Italy",
+                "address_line1": "Venice Times hotel",
+                "address_line2": "99d, 30121 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "fax": "+39 041 2031653",
+                        "name": "Venice Times hotel",
+                        "email": "venicetimes@moodhotels.it",
+                        "phone": "+39 041 2031633",
+                        "osm_id": 3123060950,
+                        "tourism": "hotel",
+                        "website": "https://www.venicetimeshotel.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q111878707",
+                        "addr:place": "Cannaregio",
+                        "addr:postcode": 30121,
+                        "addr:housenumber": "99d"
+                    }
+                },
+                "website": "https://www.venicetimeshotel.com/",
+                "contact": {
+                    "phone": "+39 041 2031633",
+                    "email": "venicetimes@moodhotels.it",
+                    "fax": "+39 041 2031653"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111878707"
+                },
+                "place_id": "51e6b4a7e49ca4284059926f8abc9bb84640f00103f901d62026ba0000000092031256656e6963652054696d657320686f74656c"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.321509500000001,
+                    45.44225270042001
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Airone",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30135",
+                "district": "Santa Croce",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta San Simon Piccolo",
+                "housenumber": "557",
+                "lon": 12.3212452,
+                "lat": 45.43946,
+                "state_code": "VEN",
+                "formatted": "Hotel Airone, Fondamenta San Simon Piccolo, 557, 30135 Venice VE, Italy",
+                "address_line1": "Hotel Airone",
+                "address_line2": "Fondamenta San Simon Piccolo, 557, 30135 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "fax": "+39 041 5204991",
+                        "name": "Hotel Airone",
+                        "email": "info@aironehotel.com",
+                        "phone": "+39 041 5204800",
+                        "stars": 2,
+                        "osm_id": 3396925559,
+                        "tourism": "hotel",
+                        "website": "http://www.aironehotel.com/",
+                        "osm_type": "n",
+                        "wikidata": "Q111124076",
+                        "addr:place": "Santa Croce",
+                        "addr:street": "Fondamenta San Simon Piccolo",
+                        "addr:postcode": 30135,
+                        "addr:housenumber": 557
+                    }
+                },
+                "website": "http://www.aironehotel.com/",
+                "contact": {
+                    "phone": "+39 041 5204800",
+                    "email": "info@aironehotel.com",
+                    "fax": "+39 041 5204991"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111124076"
+                },
+                "accommodation": {
+                    "stars": 2
+                },
+                "place_id": "5174fe37407aa428405951daac3940b84640f00103f90177f878ca0000000092030c486f74656c204169726f6e65"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3212452,
+                    45.43946000042036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hotel Moresco",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "3499",
+                "lon": 12.3213738,
+                "lat": 45.4359592,
+                "state_code": "VEN",
+                "formatted": "Hotel Moresco, 3499, 30123 Venice VE, Italy",
+                "address_line1": "Hotel Moresco",
+                "address_line2": "3499, 30123 Venice VE, Italy",
+                "categories": [
+                    "accommodation",
+                    "accommodation.hotel"
+                ],
+                "details": [
+                    "details",
+                    "details.accommodation",
+                    "details.contact",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "fax": "+39 041 8685427",
+                        "name": "Hotel Moresco",
+                        "email": "info@hotelmorescovenice.com",
+                        "phone": "+39 041 2440202",
+                        "stars": 4,
+                        "osm_id": 3398706945,
+                        "tourism": "hotel",
+                        "website": "http://www.hotelmorescovenice.com/it/",
+                        "osm_type": "n",
+                        "wikidata": "Q111412856",
+                        "addr:place": "Dorsoduro",
+                        "addr:postcode": 30123,
+                        "addr:housenumber": 3499
+                    }
+                },
+                "website": "http://www.hotelmorescovenice.com/it/",
+                "contact": {
+                    "phone": "+39 041 2440202",
+                    "email": "info@hotelmorescovenice.com",
+                    "fax": "+39 041 8685427"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q111412856"
+                },
+                "accommodation": {
+                    "stars": 4
+                },
+                "place_id": "511e95511b8ba42840594919d682cdb74640f00103f901012794ca0000000092030d486f74656c204d6f726573636f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3213738,
+                    45.435959200420776
+                ]
+            }
+        }
+    ]
+}
