@@ -51,6 +51,7 @@ RSpec.describe SearchLogic do
         }.to change(City, :count).by(0)
 
         expect(geocode_venice).to have_been_requested.times(0)
+        expect(places_stub).to have_been_requested.times(1)
     end
 
     it "does not create a place that is already in the database" do

@@ -3,6 +3,7 @@ module SearchLogic
         def get_places_from_city_string(city_name, place_type)
             city = get_city_from_name(city_name)
             places = city.public_send(place_type).to_a #city.attractions.to_a
+            return places if places.count == 20
 
             case place_type
             when "attractions"
