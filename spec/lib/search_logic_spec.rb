@@ -1,6 +1,6 @@
 RSpec.describe SearchLogic do
     it "saves new attractions" do
-        geocode_stub = stub_geocode_venice
+        geocode_stub = stub_request(:get, %r{https://api.geoapify.com/v1/geocode/search\?apiKey=[^&]+&format=json&text=Venice,%20Italy}).to_return(status: 200, body: File.read("spec/responses/geocode_venice.json"))
         
         places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
 
