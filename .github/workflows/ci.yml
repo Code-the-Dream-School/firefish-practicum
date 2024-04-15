@@ -17,12 +17,10 @@ jobs:
           bundler-cache: true
       - env:
           RAILS_ENV: test
-        run: bin/rails db:setup
-        
-env:
-    - name: Set up .env
-      run: cp .env.example .env
-
+        run: bin/rails db:setup        
+      - env:
+        name: Set up .env
+        run: cp .env.example .env
       - env:
           RAILS_ENV: test
         run: bin/rails spec
