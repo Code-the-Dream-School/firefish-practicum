@@ -16,7 +16,6 @@ jobs:
         with:
           bundler-cache: true
       - env: Copy .env.example to .env
-          RAILS_ENV: test
         run: cp .env.example .env
       - env:
           RAILS_ENV: test
