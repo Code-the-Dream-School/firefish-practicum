@@ -15,9 +15,9 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: Copy .env.example to .env
-        run: |
-          cp .env.example .env
+      - env: Copy .env.example to .env
+          RAILS_ENV: test
+        run: cp .env.example .env
       - env:
           RAILS_ENV: test
         run: bin/rails db:setup
