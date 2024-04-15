@@ -8,6 +8,8 @@ on:
       - dev-main
       - main
 jobs:
+  - name: Copy .env.example to .env
+      run: cp .env.example .env
   rspec:
     runs-on: ubuntu-latest
     steps:
@@ -15,8 +17,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - env: Copy .env.example to .env
-        run: cp .env.example .env
       - env:
           RAILS_ENV: test
         run: bin/rails db:setup
