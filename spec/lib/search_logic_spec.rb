@@ -1,6 +1,6 @@
 RSpec.describe SearchLogic do
     it "saves new attractions" do
-        geocode_venice
+        geocode_stub = stub_geocode_venice
         
         places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
 
@@ -9,7 +9,7 @@ RSpec.describe SearchLogic do
             expect(result).to all(be_a(Attraction))
         }.to change(City, :count).by(1).and change(Attraction, :count).by(20)
 
-        expect(geocode_venice).to have_been_requested.times(1)
+        expect(geocode_stub).to have_been_requested.times(1)
         expect(places_stub).to have_been_requested.times(1)
     end
 
