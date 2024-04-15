@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+#DO NOT DELETE - this is needed to run RSPEC for the search logic
 # Specs in this file have access to a helper object that includes
 # the SearchesHelper. For example:
 #
@@ -11,5 +11,4 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe SearchesHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
 end

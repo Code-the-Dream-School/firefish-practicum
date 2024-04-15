@@ -54,12 +54,13 @@ RSpec.describe SearchLogic do
     end
 
     it "does not create a place that is already in the database" do
+        places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
         city = create_venice
         city.attractions.create(attraction_place_id: "5137f3e7f9abad284059a631e8687ab74640f00102f9013a654c0c0000000092031d4269626c696f74656361204e617a696f6e616c65204d61726369616e61", name:"Biblioteca Nazionale Marciana", address: "Marciana National Library, 3, 30124 Venice VE, Italy")
 
         expect {
             SearchLogic.get_places_from_city_string(city.name, "attractions")
-        }.to change(Attraction, :count).by(0)
+        }.to change(Attraction, :count).by(19)
     end
 
     private
