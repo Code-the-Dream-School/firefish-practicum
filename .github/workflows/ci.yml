@@ -15,7 +15,6 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - env:
         name: Set up .env
         run: cp .env.example .env
       - env:
