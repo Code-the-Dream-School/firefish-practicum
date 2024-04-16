@@ -2,26 +2,19 @@ module SearchLogic
     class << self
         def get_places_from_city_string(city_name, place_type)
             city = get_city_from_name(city_name)
+            places = city.public_send(place_type).to_a #city.attractions.to_a
+            return places if places.count == 20
 
             case place_type
             when "attractions"
-                places = city.attractions.to_a
-                return places if places.count == 20
-
                 category = "tourism.attraction"
                 response = get_place_details(category, city.city_place_id)
                 create_attractions(response, city)
             when "hotels"
-                places = city.hotels.to_a
-                return places if places.count == 20
-
                 category = "accommodation.hotel"
                 response = get_place_details(category, city.city_place_id)
                 create_hotels(response, city)
             when "restaurants"
-                places = city.restaurants.to_a
-                return places if places.count == 20
-
                 category = "catering.restaurant"
                 response = get_place_details(category, city.city_place_id)
                 create_restaurants(response, city)
@@ -37,10 +30,10 @@ module SearchLogic
             response = get_geocode_response(city_name)
             city_place_id = extract_city_place_id(response)
             name = extract_city_name(response)
-            #City.find_or_create_by(city_place_id:, name:)
-            return city if City.find_by(city_place_id:)
-
-            City.create(city_place_id:, name:)
+            city = City.find_or_create_by(city_place_id:)
+            city.name = name
+            city.save
+            city
         end
 
         def get_geocode_response(city_name_from_search)
