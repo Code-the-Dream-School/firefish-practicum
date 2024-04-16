@@ -30,7 +30,10 @@ module SearchLogic
             response = get_geocode_response(city_name)
             city_place_id = extract_city_place_id(response)
             name = extract_city_name(response)
-            City.find_or_create_by(city_place_id:, name:)
+            #City.find_or_create_by(city_place_id:, name:)
+            return city if City.find_by(city_place_id:)
+
+            City.create(city_place_id:, name:)
         end
 
         def get_geocode_response(city_name_from_search)
