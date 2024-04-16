@@ -64,6 +64,24 @@ RSpec.describe SearchLogic do
         }.to change(Attraction, :count).by(19)
     end
 
+    it "allows the user to search for the City name without the Country" do
+        geocode_stub = stub_request(:get, %r{https://api.geoapify.com/v1/geocode/search\?apiKey=[^&]+&format=json&text=Venice}).to_return(status: 200, body: File.read("spec/responses/geocode_venice.json"))
+        places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
+
+        expect {
+            SearchLogic.get_places_from_city_string("Venice", "attractions")
+        }.to change(City, :count).by(1).and change(Attraction, :count).by(20)
+    end
+
+    it "provides an error when the place type is not valid" do
+        geocode_stub = geocode_venice
+        places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
+
+        expect{
+            SearchLogic.get_places_from_city_string("Venice, Italy", "Some Beach")
+        }.to raise_error(PlaceTypeInvalid, "Error: The place type used is not supported at the moment")
+    end
+
     private
 
     def geocode_venice
