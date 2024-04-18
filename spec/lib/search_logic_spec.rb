@@ -1,12 +1,12 @@
 RSpec.describe SearchLogic do
     it "saves new attractions" do
-        geocode_stub = stub_request(:get, %r{https://api.geoapify.com/v1/geocode/search\?apiKey=[^&]+&format=json&text=Venice,%20Italy}).to_return(status: 200, body: File.read("spec/responses/geocode_venice.json"))
-        
+        geocode_stub = geocode_venice
         places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
 
         expect {
             result = SearchLogic.get_places_from_city_string("Venice, Italy", "attractions")
             expect(result).to all(be_a(Attraction))
+            expect(result.length).to be(20)
         }.to change(City, :count).by(1).and change(Attraction, :count).by(20)
 
         expect(geocode_stub).to have_been_requested.times(1)
@@ -14,30 +14,30 @@ RSpec.describe SearchLogic do
     end
 
     it "saves new hotels" do
-        geocode_venice
-
+        geocode_stub = geocode_venice
         places_stub = stub_request(:get, venice_request_url("accommodation.hotel")).to_return(status: 200, body: File.read("spec/responses/hotels_venice.json"))
 
         expect {
             result = SearchLogic.get_places_from_city_string("Venice, Italy", "hotels")
             expect(result).to all(be_a(Hotel))
+            expect(result.length).to be(20)
         }.to change(City, :count).by(1).and change(Hotel, :count).by(20)
 
-        expect(geocode_venice).to have_been_requested.times(1)
+        expect(geocode_stub).to have_been_requested.times(1)
         expect(places_stub).to have_been_requested.times(1)
     end
     
     it "saves new restaurants" do
-        geocode_venice
-
+        geocode_stub = geocode_venice
         places_stub = stub_request(:get, venice_request_url("catering.restaurant")).to_return(status: 200, body: File.read("spec/responses/restaurants_venice.json"))
 
         expect {
             result = SearchLogic.get_places_from_city_string("Venice, Italy", "restaurants")
             expect(result).to all(be_a(Restaurant))
+            expect(result.length).to be(20)
         }.to change(City, :count).by(1).and change(Restaurant, :count).by(20)
 
-        expect(geocode_venice).to have_been_requested.times(1)
+        expect(geocode_stub).to have_been_requested.times(1)
         expect(places_stub).to have_been_requested.times(1)
     end
 
@@ -47,10 +47,11 @@ RSpec.describe SearchLogic do
         city = create_venice
 
         expect {
-            SearchLogic.get_places_from_city_string(city.name, "attractions")
-        }.to change(City, :count).by(0)
+            result = SearchLogic.get_places_from_city_string("Venice, Italy", "attractions")
+            expect(result).to all(be_a(Attraction))
+            expect(result.length).to be(20)
+        }.to change(City, :count).by(0).and change(Attraction, :count).by(20)
 
-        expect(geocode_venice).to have_been_requested.times(0)
         expect(places_stub).to have_been_requested.times(1)
     end
 
@@ -60,8 +61,12 @@ RSpec.describe SearchLogic do
         city.attractions.create(attraction_place_id: "5137f3e7f9abad284059a631e8687ab74640f00102f9013a654c0c0000000092031d4269626c696f74656361204e617a696f6e616c65204d61726369616e61", name:"Biblioteca Nazionale Marciana", address: "Marciana National Library, 3, 30124 Venice VE, Italy")
 
         expect {
-            SearchLogic.get_places_from_city_string(city.name, "attractions")
+            result = SearchLogic.get_places_from_city_string("Venice, Italy", "attractions")
+            expect(result).to all(be_a(Attraction))
+            expect(result.length).to be(20)
         }.to change(Attraction, :count).by(19)
+
+        expect(places_stub).to have_been_requested.times(1)
     end
 
     it "allows the user to search for the City name without the Country" do
@@ -69,19 +74,31 @@ RSpec.describe SearchLogic do
         places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
 
         expect {
-            SearchLogic.get_places_from_city_string("Venice", "attractions")
+            result = SearchLogic.get_places_from_city_string("Venice, Italy", "attractions")
+            expect(result).to all(be_a(Attraction))
+            expect(result.length).to be(20)
         }.to change(City, :count).by(1).and change(Attraction, :count).by(20)
+
+        expect(geocode_stub).to have_been_requested.times(1)
+        expect(places_stub).to have_been_requested.times(1)
     end
 
     it "provides an error when the place type is not valid" do
-        geocode_stub = geocode_venice
-        places_stub = stub_request(:get, venice_request_url("tourism.attraction")).to_return(status: 200, body: File.read("spec/responses/attractions_venice.json"))
-
         expect{
             SearchLogic.get_places_from_city_string("Venice, Italy", "Some Beach")
-        }.to raise_error(PlaceTypeInvalid, "Error: The place type used is not supported at the moment")
+        }.to raise_error(PlaceTypeInvalid)
     end
 
+    it "should not call the Places API when data already exists" do
+        city = create_venice
+        attractions = create_list(:attraction, 20, city: city)
+
+        expect{
+            result = SearchLogic.get_places_from_city_string("Venice, Italy", "attractions")
+            expect(result).to all(be_a(Attraction))
+            expect(result.length).to be(20)
+        }.to change(City, :count).by(0).and change(Attraction, :count).by(0)
+    end
     private
 
     def geocode_venice

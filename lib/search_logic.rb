@@ -1,27 +1,25 @@
 module SearchLogic
+    SEARCH_LIMIT = 20
+
     class << self
         def get_places_from_city_string(city_name, place_type)
-            begin
-                city = get_city_from_name(city_name)
-                places = city.public_send(place_type).to_a #city.attractions.to_a
-                return places if places.count == 20
+            category = case place_type
+            when "attractions"
+              "tourism.attraction"
+            when "hotels"
+              "accommodation.hotel"
+            when "restaurants"
+              "catering.restaurant"
+            else
+              raise PlaceTypeInvalid.new("Error: The place type used is not supported at the moment")
+            end
 
-                case place_type
-                when "attractions"
-                    category = "tourism.attraction"
-                    response = get_place_details(category, city.city_place_id)
-                    create_attractions(response, city)
-                when "hotels"
-                    category = "accommodation.hotel"
-                    response = get_place_details(category, city.city_place_id)
-                    create_hotels(response, city)
-                when "restaurants"
-                    category = "catering.restaurant"
-                    response = get_place_details(category, city.city_place_id)
-                    create_restaurants(response, city)
-                end
-            rescue
-                raise PlaceTypeInvalid.new("Error: The place type used is not supported at the moment")
+            city = get_city_from_name(city_name)
+            if city.public_send(place_type).count == SEARCH_LIMIT
+                return city.public_send(place_type)
+            else
+                response = get_place_details(category, city.city_place_id)
+                send("create_#{place_type}", response, city)
             end
         end
 
