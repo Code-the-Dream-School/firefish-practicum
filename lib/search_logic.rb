@@ -16,8 +16,8 @@ module SearchLogic
 
             city = get_city_from_name(city_name)
             places = city.public_send(place_type).limit(SEARCH_LIMIT).to_a
-            return if places.count >= SEARCH_LIMIT
-            
+            return places if places.count >= SEARCH_LIMIT
+
             response = get_place_details(category, city.city_place_id)
             send("create_#{place_type}", response, city)
         end
