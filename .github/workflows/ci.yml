@@ -15,9 +15,11 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+      - name: Set up .env
+        run: cp .env.example .env
       - env:
           RAILS_ENV: test
-        run: bin/rails db:setup
+        run: bin/rails db:setup        
       - env:
           RAILS_ENV: test
         run: bin/rails spec
