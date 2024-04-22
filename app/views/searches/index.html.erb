@@ -1,0 +1,71 @@
+<div class="container my-4">
+  <% if @places.blank? && params[:commit].present? %>
+    <div class="alert alert-secondary" role="alert">
+      <strong>Notice:</strong> Please enter a city name and select a type to search.
+    </div>
+  <% end %>
+
+  <%= form_with url: search_path, method: :get, local: true, class: 'row g-3' do |form| %>
+    <div class="col-md-8">
+      <%= form.text_field :city_name, class: 'form-control', placeholder: "Type a city name" %>
+    </div>
+
+    <div class="btn-group-toggle" data-toggle="buttons">
+        <%= form.check_box :place_type_attractions, {class: 'btn-check', id: 'attractions'}, 'attractions', nil %>
+        <%= form.label :place_type_attractions, 'Attractions', class: 'btn btn-outline-primary', for: 'attractions' %>
+    
+        <%= form.check_box :place_type_hotels, {class: 'btn-check', id: 'hotels'}, 'hotels', nil %>
+        <%= form.label :place_type_hotels, 'Hotels', class: 'btn btn-outline-primary', for: 'hotels' %>
+    
+        <%= form.check_box :place_type_restaurants, {class: 'btn-check', id: 'restaurants'}, 'restaurants', nil %>
+        <%= form.label :place_type_restaurants, 'Restaurants', class: 'btn btn-outline-primary', for: 'restaurants' %>
+    </div>
+
+    <div class="col-12">
+      <%= form.submit "Search", class: "btn btn-success" %>
+    </div>
+  <% end %>
+
+  <% if @places.present? %>
+    <% search_type = params[:place_type_attractions] || params[:place_type_hotels] || params[:place_type_restaurants] %>
+    <% search_type = search_type.capitalize if search_type %>
+    <h3>Results for "<%= params[:city_name] %>" - <%= search_type %></h3>
+    <div class="row row-cols-1 g-4">
+      <% @places.each do |place| %>
+        <div class="col">
+          <div class="card h-100">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <% if place.image_url.present? && place.image_url.match(/\.(jpeg|jpg|gif|png)$/i) %>
+                  <img src="<%= place.image_url %>" class="img-fluid rounded-start" alt="<%= place.name %>" style="width: 100%; height: 220px; object-fit: cover;">
+                <% else %>
+                  <img src="https://placehold.co/450x220?text=No+image" class="img-fluid rounded-start" alt="No image can be displayed">
+                <% end %>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title"><%= place.name %></h5>
+                <p class="card-text"><strong>Phone:</strong> <%= place.phone.presence || 'No information is available' %></p>
+                <p class="card-text">
+                  <strong>Website:</strong>
+                  <% if place.website.present? %>
+                    <%= link_to place.website, place.website, target: '_blank' %>
+                  <% else %>
+                    No information is available
+                  <% end %>
+                </p>
+                <p class="card-text"><strong>Address:</strong> <%= place.address %></p>
+              </div>
+              <div class="card-footer bg-transparent border-top-0">
+                <%= link_to "Add to Favorites", "#", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <div class="alert alert-info">No results were found or search is not executed.</div>
+<% end %>
+</div>
