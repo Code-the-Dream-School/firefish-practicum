@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_04_181057) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -39,6 +39,66 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_04_181057) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "attractions", force: :cascade do |t|
+    t.string "attraction_place_id"
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.string "website"
+    t.text "address"
+    t.string "image_url"
+    t.boolean "toilets"
+    t.boolean "wheelchair"
+    t.boolean "changing_table"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_attractions_on_city_id"
+  end
+
+  create_table "cities", force: :cascade do |t|
+    t.string "city_place_id"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["city_place_id"], name: "index_cities_on_city_place_id", unique: true
+    t.index ["name"], name: "index_for_city_name", unique: true
+  end
+
+  create_table "hotels", force: :cascade do |t|
+    t.string "hotel_place_id"
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.string "website"
+    t.string "address"
+    t.string "image_url"
+    t.boolean "wheelchair"
+    t.integer "stars"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_hotels_on_city_id"
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "restaurant_place_id"
+    t.string "name"
+    t.string "email"
+    t.string "phone"
+    t.string "website"
+    t.string "address"
+    t.string "image_url"
+    t.string "cuisine"
+    t.boolean "wheelchair"
+    t.string "indoor_seating"
+    t.string "outdoor_seating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id"], name: "index_restaurants_on_city_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -55,4 +115,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_04_181057) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "attractions", "cities"
+  add_foreign_key "hotels", "cities"
+  add_foreign_key "restaurants", "cities"
 end
