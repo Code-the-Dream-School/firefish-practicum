@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_24_223358) do
-  create_table "Cities_Users", id: false, force: :cascade do |t|
-    t.integer "User_id", null: false
-    t.integer "City_id", null: false
-    t.index ["City_id", "User_id"], name: "index_Cities_Users_on_city_id_and_user_id"
-    t.index ["User_id", "City_id"], name: "index_Cities_Users_on_user_id_and_city_id"
-  end
-
+ActiveRecord::Schema[7.1].define(version: 2024_04_24_232217) do
   create_table "attractions", force: :cascade do |t|
     t.string "attraction_place_id"
     t.string "name"
@@ -42,6 +35,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_24_223358) do
     t.datetime "updated_at", null: false
     t.index ["city_place_id"], name: "index_cities_on_city_place_id", unique: true
     t.index ["name"], name: "index_for_city_name", unique: true
+  end
+
+  create_table "cities_users", id: false, force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "city_id", null: false
+    t.index ["city_id", "user_id"], name: "index_cities_users_on_city_id_and_user_id"
+    t.index ["user_id", "city_id"], name: "index_cities_users_on_user_id_and_city_id"
   end
 
   create_table "hotels", force: :cascade do |t|
