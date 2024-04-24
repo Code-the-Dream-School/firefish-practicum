@@ -1,9 +1,5 @@
 <% if user_signed_in? %>
-     <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger" %>
+    <%= render 'home/dashboard' %>
 <% else %>
-    <%= render 'home/landing'%>>
+    <%= render 'home/landing'%>
 <% end %>
-
-<!-- render the footer -->
-
-<%= render partial: "shared/footer"%>
