@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_24_223358) do
+  create_table "Cities_Users", id: false, force: :cascade do |t|
+    t.integer "User_id", null: false
+    t.integer "City_id", null: false
+    t.index ["City_id", "User_id"], name: "index_Cities_Users_on_city_id_and_user_id"
+    t.index ["User_id", "City_id"], name: "index_Cities_Users_on_user_id_and_city_id"
+  end
+
   create_table "attractions", force: :cascade do |t|
     t.string "attraction_place_id"
     t.string "name"
