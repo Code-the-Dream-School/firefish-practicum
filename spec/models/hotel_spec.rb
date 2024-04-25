@@ -22,6 +22,7 @@ RSpec.describe Hotel, type: :model do
       it { should validate_presence_of(:name) }
       it { should validate_presence_of(:address) }
       it { should belong_to(:city) }
+      it { should have_and_belong_to_many(:users) }
     end
   end
 end
