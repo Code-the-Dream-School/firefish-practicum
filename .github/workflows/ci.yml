@@ -22,4 +22,8 @@ jobs:
         run: bin/rails db:setup        
       - env:
           RAILS_ENV: test
-        run: bin/rails spec
+        run: bin/rspec
+      - name: Upload test coverage
+        uses: actions/upload-artifact@v4
+        with:
+          path: coverage
