@@ -1,4 +1,6 @@
 class SearchesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     if params[:city_name].present?
       selected_place_types = []
@@ -16,5 +18,10 @@ class SearchesController < ApplicationController
     #   @places = []
     #   # render :index
     end
+  end
+
+  def add_to_favorites
+    #current_user.cities.find(city_id).attractions.find(atrraction_id)
+
   end
 end
