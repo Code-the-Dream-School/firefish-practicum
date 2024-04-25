@@ -16,8 +16,12 @@ RSpec.describe Restaurant, type: :model do
       restaurant = build(:restaurant, restaurant_place_id: "unique_id", city: city)
       expect(restaurant).not_to be_valid
     end
-    it { should belong_to(:city) }
-    it { should validate_presence_of(:name) }
-    it { should validate_presence_of(:address) }
+
+    context "associations" do
+      it { should belong_to(:city) }
+      it { should validate_presence_of(:name) }
+      it { should validate_presence_of(:address) }
+      it { should belong_to(:city) }
+    end
   end
 end

@@ -1,6 +1,4 @@
 class SearchesController < ApplicationController
-  before_action :authenticate_user!
-
   def index
     if params[:city_name].present?
       selected_place_types = []
