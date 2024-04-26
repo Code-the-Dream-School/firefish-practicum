@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe SearchesController, type: :controller do
+  include Devise::TestHelpers
+
   describe 'GET index' do
     let(:city_name) { 'Paris' }
 
@@ -35,12 +37,35 @@ RSpec.describe SearchesController, type: :controller do
 
   describe "add_to_favorites" do
     it "should add a place that has not been saved previously" do
+      user = FactoryBot.create :user
+      attraction = FactoryBot.create :attraction
+
+      sign_in user
+
+      post :add_to_favorites, params: { place: {id: attraction.id, place_type: "Attractions" } }
+      expect(response).to have_http_status(302)
     end
 
     it "should not add a place that is already saved" do
+      user = FactoryBot.create :user
+      attraction = FactoryBot.create :attraction
+
+      sign_in user
+      user.attractions << attraction
+
+      post :add_to_favorites, params: { place: {id: attraction.id, place_type: "Attractions" } }
+      expect(user.attractions.length).to eq(1)
     end
 
     it "should provide an error if the place type is not attraction/hotel/restaurant" do
+      user = FactoryBot.create :user
+      place = "Brewery"
+
+      sign_in user
+
+      expect {
+        post :add_to_favorites, params: { place: {id: 1, place_type: place } }
+      }.to raise_error("#{place} is not supported at the moment")
     end
   end
 end
