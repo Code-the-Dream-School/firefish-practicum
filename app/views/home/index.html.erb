@@ -1,51 +1,5 @@
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <div class="row">
-                <div class="text-center">
-                    <% if user_signed_in? %>
-                        <div class="display-5 mb-5"> Welcome <%= current_user.email %> </div>
-                        <%= button_to "Places" %> # places path!
-                        <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger mt-5" %>
-                        <div class="text-center">
-                            <div class="display-5 mt-5 mb-5">
-                                Welcome <%= current_user.email %>
-                            </div>
-
-                            <%= button_to "Cities", cities_path, class: "btn btn-outline-primary" %>
-
-                            <div class="mt-5" style="display: flex; justify-content: center;">
-                                <%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-danger" %>
-                                <%= link_to "Edit Registration", edit_user_registration_path, class: "btn btn-outline-info mx-2" %>
-                            </div>
-
-                        </div>
-                    <% else %>
-                        <h2 class="display-5 text-blue text-center fw-bold">
-                            Welcome to Travel App!!!
-                        </h2>
-                        <%= button_to "Sign in", new_user_session_path, class: "btn btn-outline-primary mt-3" %>
-                        <div class="mt-5">
-                            <p>Create a new account:</p>
-                            <%= button_to "Register", new_user_registration_path, :method => :get, class: "btn btn-outline-success" %>
-                        </div>
-                    <% end %>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <div class="card">
-                <%= image_tag "Venice-Italy-Wallpaper.jpg", class: "rounded-top" %>
-                <div class="card-body">
-                    <h5 class="card-title">Place to go!</h5>
-                    <p class="card-text"> Venice Italy Wallpapers Download Free | PixelsTalk.Net</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- render the footer -->
-
-<%= render partial: "shared/footer"%>
+<% if user_signed_in? %>
+    <%= render 'home/dashboard' %>
+<% else %>
+    <%= render 'home/landing'%>
+<% end %>

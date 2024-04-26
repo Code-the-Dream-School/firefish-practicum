@@ -1,0 +1,1833 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Biblioteca Nazionale Marciana",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "3",
+                "lon": 12.33920269924566,
+                "lat": 45.433423149999996,
+                "state_code": "VEN",
+                "formatted": "Marciana National Library, 3, 30124 Venice VE, Italy",
+                "address_line1": "Marciana National Library",
+                "address_line2": "3, 30124 Venice VE, Italy",
+                "categories": [
+                    "access",
+                    "access.yes",
+                    "building",
+                    "building.public_and_civil",
+                    "building.tourism",
+                    "education",
+                    "education.library",
+                    "internet_access",
+                    "internet_access.free",
+                    "tourism",
+                    "tourism.attraction",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.building",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Biblioteca Nazionale Marciana",
+                        "email": "biblioteca@marciana.venezia.sbn.it",
+                        "level": 0,
+                        "phone": "+39 041 240 7211",
+                        "access": "yes",
+                        "height": 13,
+                        "osm_id": 206333242,
+                        "amenity": "library",
+                        "name:en": "Marciana National Library",
+                        "name:es": "Biblioteca Nacional Marciana",
+                        "name:it": "Biblioteca Nazionale Marciana",
+                        "name:ko": "마르차나 국립 도서관",
+                        "toilets": "yes",
+                        "tourism": "attraction",
+                        "website": "https://marciana.venezia.sbn.it",
+                        "alt_name": "Palazzo della Libreria Sansoviniana",
+                        "building": "public",
+                        "osm_type": "w",
+                        "wikidata": "Q578460",
+                        "addr:city": "Venezia",
+                        "kids_area": "no",
+                        "wikipedia": "it:Biblioteca nazionale Marciana",
+                        "addr:place": "San Marco",
+                        "check_date": "2023-10-24",
+                        "wheelchair": "yes",
+                        "roof:colour": "#D8D5D8",
+                        "addr:postcode": 30124,
+                        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-13:30; Su off",
+                        "operator:type": "public",
+                        "changing_table": "no",
+                        "toilets:access": "customers",
+                        "building:colour": "white",
+                        "internet_access": "wlan",
+                        "addr:housenumber": 3,
+                        "wikimedia_commons": "Category:Biblioteca Nazionale Marciana (Venice)",
+                        "toilets:wheelchair": "designated",
+                        "internet_access:fee": "no",
+                        "internet_access:ssid": "TEST-Marciana",
+                        "internet_access:password": "A9ccRB4m32"
+                    }
+                },
+                "website": "https://marciana.venezia.sbn.it",
+                "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-13:30; Su off",
+                "operator_details": {
+                    "type": "public"
+                },
+                "name_other": {
+                    "alt_name": "Palazzo della Libreria Sansoviniana"
+                },
+                "name_international": {
+                    "en": "Marciana National Library",
+                    "es": "Biblioteca Nacional Marciana",
+                    "it": "Biblioteca Nazionale Marciana",
+                    "ko": "마르차나 국립 도서관"
+                },
+                "contact": {
+                    "phone": "+39 041 240 7211",
+                    "email": "biblioteca@marciana.venezia.sbn.it"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "internet_access_details": {
+                        "ssid": "TEST-Marciana"
+                    },
+                    "wheelchair": true,
+                    "toilets": true,
+                    "changing_table": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q578460",
+                    "wikipedia": "it:Biblioteca nazionale Marciana",
+                    "wikimedia_commons": "Category:Biblioteca Nazionale Marciana (Venice)"
+                },
+                "restrictions": {
+                    "access": "permissive"
+                },
+                "building": {
+                    "type": "public",
+                    "color": "white",
+                    "height": 13,
+                    "roof": {
+                        "color": "#D8D5D8"
+                    }
+                },
+                "place_id": "5137f3e7f9abad284059a631e8687ab74640f00102f9013a654c0c0000000092031d4269626c696f74656361204e617a696f6e616c65204d61726369616e61"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.339202699245659,
+                    45.43342315042109
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Santa Maria del Rosario",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Sotoportego dei Bisati",
+                "lon": 12.32727673221563,
+                "lat": 45.429535900000005,
+                "state_code": "VEN",
+                "formatted": "Santa Maria del Rosario, Sotoportego dei Bisati, 30123 Venice VE, Italy",
+                "address_line1": "Santa Maria del Rosario",
+                "address_line2": "Sotoportego dei Bisati, 30123 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Santa Maria del Rosario",
+                        "osm_id": 118714648,
+                        "amenity": "place_of_worship",
+                        "name:it": "Santa Maria del Rosario (Gesuati)",
+                        "name:lt": "Bažnyčia Džezuati",
+                        "name:uk": "Церква Джезуаті",
+                        "tourism": "attraction",
+                        "website": "https://www.chorusvenezia.org/chiesa-di-santa-maria-del-rosario-gesuati",
+                        "alt_name": "Santa Maria del Rosario;Chiesa dei Gesuati",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q1093909",
+                        "wikipedia": "de:Santa Maria del Rosario",
+                        "wheelchair": "no",
+                        "denomination": "roman_catholic",
+                        "opening_hours": "Mo-Sa 10:30-16:30",
+                        "wikimedia_commons": "Category:Gesuati (Venice)"
+                    }
+                },
+                "website": "https://www.chorusvenezia.org/chiesa-di-santa-maria-del-rosario-gesuati",
+                "opening_hours": "Mo-Sa 10:30-16:30",
+                "name_other": {
+                    "alt_name": "Santa Maria del Rosario;Chiesa dei Gesuati"
+                },
+                "name_international": {
+                    "it": "Santa Maria del Rosario (Gesuati)",
+                    "lt": "Bažnyčia Džezuati",
+                    "uk": "Церква Джезуаті"
+                },
+                "facilities": {
+                    "wheelchair": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q1093909",
+                    "wikipedia": "de:Santa Maria del Rosario",
+                    "wikimedia_commons": "Category:Gesuati (Venice)"
+                },
+                "building": {
+                    "type": "church"
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "roman_catholic"
+                },
+                "place_id": "513a37dbd090a728405960624a08fbb64640f00102f901187113070000000092031753616e7461204d617269612064656c20526f736172696f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.327276732215626,
+                    45.42953590042157
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chiesa di Santa Maria dei Miracoli",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle a Fianco la Chiesa",
+                "lon": 12.339253993220336,
+                "lat": 45.4395033,
+                "state_code": "VEN",
+                "formatted": "Chiesa di Santa Maria dei Miracoli, Calle a Fianco la Chiesa, 30121 Venice VE, Italy",
+                "address_line1": "Chiesa di Santa Maria dei Miracoli",
+                "address_line2": "Calle a Fianco la Chiesa, 30121 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Chiesa di Santa Maria dei Miracoli",
+                        "email": "info@chorusvenezia.org",
+                        "style": "renaissance",
+                        "osm_id": 138800840,
+                        "amenity": "place_of_worship",
+                        "name:uk": "Церква Санта-Марія деї Міраколі",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q533680",
+                        "wikipedia": "it:Chiesa di Santa Maria dei Miracoli (Venezia)",
+                        "denomination": "roman_catholic",
+                        "opening_hours": "Mo-Sa 10:30-16:30"
+                    }
+                },
+                "opening_hours": "Mo-Sa 10:30-16:30",
+                "name_international": {
+                    "uk": "Церква Санта-Марія деї Міраколі"
+                },
+                "contact": {
+                    "email": "info@chorusvenezia.org"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q533680",
+                    "wikipedia": "it:Chiesa di Santa Maria dei Miracoli (Venezia)"
+                },
+                "building": {
+                    "type": "church"
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "roman_catholic"
+                },
+                "place_id": "516bd60bb3b2ad28405910e5e6a441b84640f00102f901c8ee4508000000009203224368696573612064692053616e7461204d6172696120646569204d697261636f6c69"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.339253993220344,
+                    45.43950330042037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Basilica di San Marco",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle San Basso",
+                "lon": 12.339821625790927,
+                "lat": 45.43454785,
+                "state_code": "VEN",
+                "formatted": "St Mark's Basilica, Calle San Basso, 30124 Venice VE, Italy",
+                "address_line1": "St Mark's Basilica",
+                "address_line2": "Calle San Basso, 30124 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.building",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "ele": 0.3,
+                        "url": "http://www.basilicasanmarco.it/",
+                        "name": "Basilica di San Marco",
+                        "height": 13,
+                        "osm_id": 138800932,
+                        "amenity": "place_of_worship",
+                        "name:cs": "Bazilika svatého Marka",
+                        "name:da": "Markuskirken",
+                        "name:de": "Markusdom",
+                        "name:en": "St Mark's Basilica",
+                        "name:es": "Basílica de San Marcos",
+                        "name:hu": "Szent Márk székesegyház",
+                        "name:it": "Basilica di San Marco",
+                        "name:ja": "サン・マルコ寺院",
+                        "name:ko": "산 마르코 대성당",
+                        "name:lt": "Šv. Morkaus bazilika",
+                        "name:pl": "Bazylika św. Marka",
+                        "name:ru": "Базилика Сан Марко",
+                        "name:uk": "Собор святого Марка",
+                        "name:zh": "圣马可大教堂",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q172988",
+                        "wikipedia": "it:Basilica di San Marco",
+                        "check_date": "2023-08-25",
+                        "importance": "international",
+                        "wheelchair": "limited",
+                        "denomination": "catholic",
+                        "wikipedia:en": "St Mark's Basilica",
+                        "opening_hours": "Oct 29-Apr 15,Apr 16-Oct 27 Mo-Sa 09:30-17:00; Oct 29-Apr 15 Su 14:00-16:30; Apr 16-Oct 27 Su 14:00-17:00",
+                        "wikimedia_commons": "Category:St. Mark's Basilica (Venice)"
+                    }
+                },
+                "website": "http://www.basilicasanmarco.it/",
+                "opening_hours": "Oct 29-Apr 15,Apr 16-Oct 27 Mo-Sa 09:30-17:00; Oct 29-Apr 15 Su 14:00-16:30; Apr 16-Oct 27 Su 14:00-17:00",
+                "name_international": {
+                    "cs": "Bazilika svatého Marka",
+                    "da": "Markuskirken",
+                    "de": "Markusdom",
+                    "en": "St Mark's Basilica",
+                    "es": "Basílica de San Marcos",
+                    "hu": "Szent Márk székesegyház",
+                    "it": "Basilica di San Marco",
+                    "ja": "サン・マルコ寺院",
+                    "ko": "산 마르코 대성당",
+                    "lt": "Šv. Morkaus bazilika",
+                    "pl": "Bazylika św. Marka",
+                    "ru": "Базилика Сан Марко",
+                    "uk": "Собор святого Марка",
+                    "zh": "圣马可大教堂"
+                },
+                "ele": 0.3,
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q172988",
+                    "wikipedia": "it:Basilica di San Marco",
+                    "wikimedia_commons": "Category:St. Mark's Basilica (Venice)"
+                },
+                "building": {
+                    "type": "church",
+                    "height": 13
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "catholic"
+                },
+                "place_id": "51bc7da219fdad284059750d93439fb74640f00102f90124ef450800000000920315426173696c6963612064692053616e204d6172636f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.339821625790925,
+                    45.43454785042096
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Squero de San Trovaso",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "lon": 12.326021712495585,
+                "lat": 45.43033805,
+                "state_code": "VEN",
+                "formatted": "Squero de San Trovaso, 30123 Venice VE, Italy",
+                "address_line1": "Squero de San Trovaso",
+                "address_line2": "30123 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.industrial",
+                    "building.tourism",
+                    "tourism",
+                    "tourism.attraction",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Squero de San Trovaso",
+                        "osm_id": 138841864,
+                        "tourism": "attraction",
+                        "website": "http://www.squerosantrovaso.com/",
+                        "alt_name": "Squero di San Trovaso",
+                        "building": "industrial",
+                        "osm_type": "w",
+                        "waterway": "boatyard",
+                        "wikidata": "Q741242",
+                        "addr:city": "Venezia",
+                        "wikipedia": "it:Squero di San Trovaso",
+                        "wheelchair": "limited",
+                        "addr:street": "Campo San Trovaso",
+                        "addr:postcode": 30123,
+                        "contact:email": "info@squerosantrovaso.com",
+                        "addr:housenumber": 1097
+                    }
+                },
+                "website": "http://www.squerosantrovaso.com/",
+                "name_other": {
+                    "alt_name": "Squero di San Trovaso"
+                },
+                "contact": {
+                    "email": "info@squerosantrovaso.com"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q741242",
+                    "wikipedia": "it:Squero di San Trovaso"
+                },
+                "building": {
+                    "type": "industrial"
+                },
+                "place_id": "51aee86151eca62840596f64365115b74640f00102f901088f46080000000092031553717565726f2064652053616e2054726f7661736f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.326021712495585,
+                    45.430338050421476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Teatro La Fenice",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Campo San Fantin",
+                "housenumber": "1965",
+                "lon": 12.3338572,
+                "lat": 45.4337096,
+                "state_code": "VEN",
+                "formatted": "Teatro La Fenice, Campo San Fantin, 1965, 30124 Venice VE, Italy",
+                "address_line1": "Teatro La Fenice",
+                "address_line2": "Campo San Fantin, 1965, 30124 Venice VE, Italy",
+                "categories": [
+                    "entertainment",
+                    "entertainment.culture",
+                    "entertainment.culture.theatre",
+                    "tourism",
+                    "tourism.attraction"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Teatro La Fenice",
+                        "email": "info@teatrolafenice.org",
+                        "phone": "+39 041 786511",
+                        "osm_id": 251501878,
+                        "amenity": "theatre",
+                        "name:ru": "Театр Ла Фениче",
+                        "tourism": "attraction",
+                        "website": "https://www.teatrolafenice.it/",
+                        "osm_type": "n",
+                        "wikidata": "Q223942",
+                        "addr:city": "Venezia",
+                        "wikipedia": "it:Gran Teatro La Fenice",
+                        "addr:place": "San Marco",
+                        "wheelchair": "no",
+                        "addr:street": "Campo San Fantin",
+                        "addr:country": "IT",
+                        "addr:postcode": 30124,
+                        "addr:housenumber": 1965
+                    }
+                },
+                "website": "https://www.teatrolafenice.it/",
+                "name_international": {
+                    "ru": "Театр Ла Фениче"
+                },
+                "contact": {
+                    "phone": "+39 041 786511",
+                    "email": "info@teatrolafenice.org"
+                },
+                "facilities": {
+                    "wheelchair": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q223942",
+                    "wikipedia": "it:Gran Teatro La Fenice"
+                },
+                "place_id": "517a11b754efaa28405984e2d2cb83b74640f00103f901369dfd0e0000000092031054656174726f204c612046656e696365"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3338572,
+                    45.433709600421054
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ercole Moretti",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "village": "Murano",
+                "postcode": "30141",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta Andrea Navagero",
+                "housenumber": "42",
+                "lon": 12.3574218,
+                "lat": 45.4556056,
+                "state_code": "VEN",
+                "formatted": "Ercole Moretti, Fondamenta Andrea Navagero, 42, 30141 Venice VE, Italy",
+                "address_line1": "Ercole Moretti",
+                "address_line2": "Fondamenta Andrea Navagero, 42, 30141 Venice VE, Italy",
+                "categories": [
+                    "tourism",
+                    "tourism.attraction"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.production"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Ercole Moretti",
+                        "craft": "glaziery",
+                        "email": "info@ercolemoretti.it",
+                        "phone": "+39 041739083",
+                        "osm_id": 4382120989,
+                        "name:it": "Ercole Moretti",
+                        "tourism": "attraction",
+                        "website": "https://www.ercolemoretti.it/",
+                        "osm_type": "n",
+                        "addr:street": "Fondamenta Andrea Navagero",
+                        "description": "Azienda artigiana specializzata nella produzione di vetro in murrina",
+                        "addr:postcode": 30141,
+                        "opening_hours": "Mo-Fr 08:00-17:00",
+                        "addr:housenumber": 42
+                    }
+                },
+                "website": "https://www.ercolemoretti.it/",
+                "opening_hours": "Mo-Fr 08:00-17:00",
+                "description": "Azienda artigiana specializzata nella produzione di vetro in murrina",
+                "craft": "glaziery",
+                "name_international": {
+                    "it": "Ercole Moretti"
+                },
+                "contact": {
+                    "phone": "+39 041739083",
+                    "email": "info@ercolemoretti.it"
+                },
+                "production": {
+                    "industry": "glaziery"
+                },
+                "place_id": "5140c17bfdffb6284059eed5c84851ba4640f00103f9011ddc31050100000092030e4572636f6c65204d6f7265747469"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.357421799999997,
+                    45.455605600418366
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Cattedrale di Santa Maria Assunta",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "village": "Burano",
+                "postcode": "30142",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta dei Borgognoni",
+                "lon": 12.419319456021592,
+                "lat": 45.49833645,
+                "state_code": "VEN",
+                "formatted": "Cathedral of Santa Maria Assunta, Fondamenta dei Borgognoni, 30142 Venice VE, Italy",
+                "address_line1": "Cathedral of Santa Maria Assunta",
+                "address_line2": "Fondamenta dei Borgognoni, 30142 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Cattedrale di Santa Maria Assunta",
+                        "osm_id": 132937433,
+                        "amenity": "place_of_worship",
+                        "name:en": "Cathedral of Santa Maria Assunta",
+                        "name:it": "Cattedrale di Santa Maria Assunta",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q1149886",
+                        "wikipedia": "it:Basilica di Santa Maria Assunta (Torcello)",
+                        "wheelchair": "yes",
+                        "denomination": "catholic",
+                        "opening_hours": "Mo-Su 10:00-17:00"
+                    }
+                },
+                "opening_hours": "Mo-Su 10:00-17:00",
+                "name_international": {
+                    "en": "Cathedral of Santa Maria Assunta",
+                    "it": "Cattedrale di Santa Maria Assunta"
+                },
+                "facilities": {
+                    "wheelchair": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q1149886",
+                    "wikipedia": "it:Basilica di Santa Maria Assunta (Torcello)"
+                },
+                "building": {
+                    "type": "church"
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "catholic"
+                },
+                "place_id": "51e6602c0ab1d6284059e276227dc9bf4640f00102f901d976ec070000000092032143617474656472616c652064692053616e7461204d6172696120417373756e7461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.419319456021594,
+                    45.49833645041305
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Palazzo Ducale",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Molo di Palazzo Ducale",
+                "lon": 12.340591020258383,
+                "lat": 45.4342109,
+                "state_code": "VEN",
+                "formatted": "Doge's Palace, Molo di Palazzo Ducale, 30124 Venice VE, Italy",
+                "address_line1": "Doge's Palace",
+                "address_line2": "Molo di Palazzo Ducale, 30124 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.historic",
+                    "building.tourism",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights",
+                    "tourism.sights.castle",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.building",
+                    "details.facilities",
+                    "details.historic",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Palazzo Ducale",
+                        "height": 24,
+                        "osm_id": 138803915,
+                        "name:da": "Dogepaladset",
+                        "name:de": "Dogenpalast",
+                        "name:en": "Doge's Palace",
+                        "name:es": "Palacio Ducal",
+                        "name:fr": "Palais des Doges",
+                        "name:he": "ארמון הדוג'ה",
+                        "name:hu": "Dózse palota",
+                        "name:it": "Palazzo Ducale",
+                        "name:ja": "ドゥカーレ宮殿",
+                        "name:ko": "두칼레 궁전",
+                        "name:pl": "Pałac Dożów",
+                        "name:pt": "Palácio Ducal",
+                        "name:ru": "Дворец Дожей",
+                        "name:uk": "Палац дожів",
+                        "name:zh": "威尼斯總督府",
+                        "tourism": "attraction",
+                        "building": "yes",
+                        "historic": "castle",
+                        "osm_type": "w",
+                        "wikidata": "Q189883",
+                        "wikipedia": "it:Palazzo Ducale (Venezia)",
+                        "wheelchair": "limited",
+                        "castle_type": "palace",
+                        "opening_hours": "Apr 01-Oct 31 08:30-19:00; Nov 01-Mar 31 08:30-17:30",
+                        "wikimedia_commons": "Category:Doge's Palace (Venice)",
+                        "toilets:wheelchair": "yes"
+                    }
+                },
+                "opening_hours": "Apr 01-Oct 31 08:30-19:00; Nov 01-Mar 31 08:30-17:30",
+                "name_international": {
+                    "da": "Dogepaladset",
+                    "de": "Dogenpalast",
+                    "en": "Doge's Palace",
+                    "es": "Palacio Ducal",
+                    "fr": "Palais des Doges",
+                    "he": "ארמון הדוג'ה",
+                    "hu": "Dózse palota",
+                    "it": "Palazzo Ducale",
+                    "ja": "ドゥカーレ宮殿",
+                    "ko": "두칼레 궁전",
+                    "pl": "Pałac Dożów",
+                    "pt": "Palácio Ducal",
+                    "ru": "Дворец Дожей",
+                    "uk": "Палац дожів",
+                    "zh": "威尼斯總督府"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    },
+                    "toilets": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q189883",
+                    "wikipedia": "it:Palazzo Ducale (Venezia)",
+                    "wikimedia_commons": "Category:Doge's Palace (Venice)"
+                },
+                "historic": {
+                    "type": "castle",
+                    "castle_type": "palace"
+                },
+                "building": {
+                    "height": 24
+                },
+                "place_id": "515aa43af261ae284059fe6f083994b74640f00102f901cbfa45080000000092030e50616c617a7a6f20447563616c65"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.340591020258376,
+                    45.43421090042101
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Basilica di San Giorgio Maggiore",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "San Giorgio",
+                "lon": 12.343279168881121,
+                "lat": 45.4293889,
+                "state_code": "VEN",
+                "formatted": "Basilica di San Giorgio Maggiore, San Giorgio, 30122 Venice VE, Italy",
+                "address_line1": "Basilica di San Giorgio Maggiore",
+                "address_line2": "San Giorgio, 30122 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Basilica di San Giorgio Maggiore",
+                        "osm_id": 138804537,
+                        "amenity": "place_of_worship",
+                        "name:fr": "Basilique San Giorgio Maggiore de Venise",
+                        "name:ko": "산 조르조 마조레 성당",
+                        "name:lt": "San Giorgio Maggiore bazilika",
+                        "name:pl": "Kościół San Giorgio Maggiore",
+                        "name:ru": "Базилика Сан-Джорджо-Маджоре",
+                        "name:uk": "Собор Сан-Джорджо Маджоре",
+                        "name:zh": "圣乔治马焦雷教堂",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q713558",
+                        "wikipedia": "it:Basilica di San Giorgio Maggiore",
+                        "wheelchair": "limited",
+                        "roof:colour": "#9B6E59",
+                        "denomination": "catholic",
+                        "opening_hours": "Mo-Su 07:00-18:00"
+                    }
+                },
+                "opening_hours": "Mo-Su 07:00-18:00",
+                "name_international": {
+                    "fr": "Basilique San Giorgio Maggiore de Venise",
+                    "ko": "산 조르조 마조레 성당",
+                    "lt": "San Giorgio Maggiore bazilika",
+                    "pl": "Kościół San Giorgio Maggiore",
+                    "ru": "Базилика Сан-Джорджо-Маджоре",
+                    "uk": "Собор Сан-Джорджо Маджоре",
+                    "zh": "圣乔治马焦雷教堂"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q713558",
+                    "wikipedia": "it:Basilica di San Giorgio Maggiore"
+                },
+                "building": {
+                    "type": "church",
+                    "roof": {
+                        "color": "#9B6E59"
+                    }
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "catholic"
+                },
+                "place_id": "51267c8749c2af284059be492a37f6b64640f00102f90139fd450800000000920320426173696c6963612064692053616e2047696f7267696f204d616767696f7265"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.343279168881121,
+                    45.429388900421586
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Basilica di Santa Maria Gloriosa dei Frari",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30125",
+                "district": "San Polo",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle Prima Larga",
+                "lon": 12.326225170807453,
+                "lat": 45.4368715,
+                "state_code": "VEN",
+                "formatted": "Basilica di Santa Maria Gloriosa dei Frari, Calle Prima Larga, 30125 Venice VE, Italy",
+                "address_line1": "Basilica di Santa Maria Gloriosa dei Frari",
+                "address_line2": "Calle Prima Larga, 30125 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.building",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Basilica di Santa Maria Gloriosa dei Frari",
+                        "height": 28,
+                        "osm_id": 138841819,
+                        "amenity": "place_of_worship",
+                        "name:fr": "Basilique Santa Maria Gloriosa dei Frari",
+                        "name:he": "בזיליקת סנטה מריה גלוריוזה דיי פרארי",
+                        "name:it": "Basilica di Santa Maria Gloriosa dei Frari",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q224961",
+                        "wikipedia": "de:Santa Maria Gloriosa dei Frari",
+                        "wheelchair": "limited",
+                        "denomination": "catholic",
+                        "opening_hours": "Mo-Sa 09:00-18:00; Su 13:00-18:00"
+                    }
+                },
+                "opening_hours": "Mo-Sa 09:00-18:00; Su 13:00-18:00",
+                "name_international": {
+                    "fr": "Basilique Santa Maria Gloriosa dei Frari",
+                    "he": "בזיליקת סנטה מריה גלוריוזה דיי פרארי",
+                    "it": "Basilica di Santa Maria Gloriosa dei Frari"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q224961",
+                    "wikipedia": "de:Santa Maria Gloriosa dei Frari"
+                },
+                "building": {
+                    "type": "church",
+                    "height": 28
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "catholic"
+                },
+                "place_id": "5101804ffc06a72840593e6ec367ebb74640f00102f901db8e46080000000092032a426173696c6963612064692053616e7461204d6172696120476c6f72696f736120646569204672617269"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.326225170807449,
+                    45.43687150042068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Basilica dei santi Giovanni e Paolo",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Campo Santi Giovanni e Paolo",
+                "lon": 12.342199323300864,
+                "lat": 45.43925305,
+                "state_code": "VEN",
+                "formatted": "Basilica of Saints John and Paul, Campo Santi Giovanni e Paolo, 30122 Venice VE, Italy",
+                "address_line1": "Basilica of Saints John and Paul",
+                "address_line2": "Campo Santi Giovanni e Paolo, 30122 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Basilica dei santi Giovanni e Paolo",
+                        "osm_id": 153483298,
+                        "amenity": "place_of_worship",
+                        "name:en": "Basilica of Saints John and Paul",
+                        "name:uk": "Собор Санті-Джованні е Паоло",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q155225",
+                        "wikipedia": "it:Basilica dei Santi Giovanni e Paolo (Venezia)",
+                        "wheelchair": "yes",
+                        "denomination": "roman_catholic",
+                        "opening_hours": "Mo-Sa 09:00-18:00; Su 12:00-18:00"
+                    }
+                },
+                "opening_hours": "Mo-Sa 09:00-18:00; Su 12:00-18:00",
+                "name_international": {
+                    "en": "Basilica of Saints John and Paul",
+                    "uk": "Собор Санті-Джованні е Паоло"
+                },
+                "facilities": {
+                    "wheelchair": true
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q155225",
+                    "wikipedia": "it:Basilica dei Santi Giovanni e Paolo (Venezia)"
+                },
+                "building": {
+                    "type": "church"
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "roman_catholic"
+                },
+                "place_id": "51c294ecbf34af284059a41ca77139b84640f00102f90122f8250900000000920323426173696c696361206465692073616e74692047696f76616e6e6920652050616f6c6f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.342199323300864,
+                    45.439253050420376
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chiesa di San Zaccaria",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Campo San Zaccaria",
+                "lon": 12.343566436249999,
+                "lat": 45.43471255,
+                "state_code": "VEN",
+                "formatted": "Chiesa di San Zaccaria, Campo San Zaccaria, 30122 Venice VE, Italy",
+                "address_line1": "Chiesa di San Zaccaria",
+                "address_line2": "Campo San Zaccaria, 30122 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church"
+                ],
+                "details": [
+                    "details",
+                    "details.building",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Chiesa di San Zaccaria",
+                        "osm_id": 162035005,
+                        "amenity": "place_of_worship",
+                        "name:he": "כנסיית סן זכריה",
+                        "name:it": "Chiesa di San Zaccaria",
+                        "name:uk": "Церква Сан-Заккаріа",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q794876",
+                        "wikipedia": "it:Chiesa di San Zaccaria",
+                        "denomination": "catholic",
+                        "opening_hours": "Mo-Sa 10:00-12:00, 16:00-18:00; Su 16:00-18:00",
+                        "building:levels": 2
+                    }
+                },
+                "opening_hours": "Mo-Sa 10:00-12:00, 16:00-18:00; Su 16:00-18:00",
+                "name_international": {
+                    "he": "כנסיית סן זכריה",
+                    "it": "Chiesa di San Zaccaria",
+                    "uk": "Церква Сан-Заккаріа"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q794876",
+                    "wikipedia": "it:Chiesa di San Zaccaria"
+                },
+                "building": {
+                    "levels": 2,
+                    "type": "church"
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "catholic"
+                },
+                "place_id": "51e0649ff0e7af284059fe9b2da9a4b74640f00102f9013d75a809000000009203164368696573612064692053616e205a61636361726961"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.34356643625,
+                    45.43471255042094
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Chiesa di Santa Fosca",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "village": "Burano",
+                "postcode": "30142",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta dei Borgognoni",
+                "lon": 12.418730389193549,
+                "lat": 45.498141649999994,
+                "state_code": "VEN",
+                "formatted": "Church of Santa Fosca, Fondamenta dei Borgognoni, 30142 Venice VE, Italy",
+                "address_line1": "Church of Santa Fosca",
+                "address_line2": "Fondamenta dei Borgognoni, 30142 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.place_of_worship",
+                    "building.tourism",
+                    "religion",
+                    "religion.place_of_worship",
+                    "religion.place_of_worship.christianity",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights.place_of_worship",
+                    "tourism.sights.place_of_worship.church",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.place_of_worship",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Chiesa di Santa Fosca",
+                        "osm_id": 175718783,
+                        "amenity": "place_of_worship",
+                        "name:en": "Church of Santa Fosca",
+                        "name:it": "Chiesa di Santa Fosca",
+                        "tourism": "attraction",
+                        "building": "church",
+                        "osm_type": "w",
+                        "religion": "christian",
+                        "wikidata": "Q3585411",
+                        "wikipedia": "it:Chiesa di Santa Fosca (Torcello)",
+                        "wheelchair": "limited",
+                        "denomination": "catholic",
+                        "opening_hours": "Mo-Su 10:30-17:30; PH closed"
+                    }
+                },
+                "opening_hours": "Mo-Su 10:30-17:30; PH closed",
+                "name_international": {
+                    "en": "Church of Santa Fosca",
+                    "it": "Chiesa di Santa Fosca"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q3585411",
+                    "wikipedia": "it:Chiesa di Santa Fosca (Torcello)"
+                },
+                "building": {
+                    "type": "church"
+                },
+                "place_of_worship": {
+                    "religion": "christian",
+                    "denomination": "catholic"
+                },
+                "place_id": "51f4da5ed463d62840595aa6081bc3bf4640f00102f9017f41790a000000009203154368696573612064692053616e746120466f736361"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.418730389193549,
+                    45.498141650413075
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Giardini Reali di Venezia",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "lon": 12.33824165673169,
+                "lat": 45.4330274,
+                "state_code": "VEN",
+                "formatted": "Royal Gardens of Venice, 30124 Venice VE, Italy",
+                "address_line1": "Royal Gardens of Venice",
+                "address_line2": "30124 Venice VE, Italy",
+                "categories": [
+                    "leisure",
+                    "leisure.park",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights"
+                ],
+                "details": [
+                    "details",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Giardini Reali di Venezia",
+                        "osm_id": 180833795,
+                        "leisure": "park",
+                        "name:en": "Royal Gardens of Venice",
+                        "name:ko": "베니스 왕립 정원",
+                        "tourism": "attraction",
+                        "historic": "heritage",
+                        "osm_type": "w",
+                        "wikidata": "Q56323219",
+                        "opening_hours": "Tu-Su 09:00-17:00",
+                        "wikimedia_commons": "Category:Giardini Reali (Venice)"
+                    }
+                },
+                "opening_hours": "Tu-Su 09:00-17:00",
+                "name_international": {
+                    "en": "Royal Gardens of Venice",
+                    "ko": "베니스 왕립 정원"
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q56323219",
+                    "wikimedia_commons": "Category:Giardini Reali (Venice)"
+                },
+                "historic": {
+                    "type": "heritage"
+                },
+                "place_id": "516e9dab022ead284059548a1d716db74640f00102f901034ec70a000000009203194769617264696e69205265616c692064692056656e657a6961"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.338241656731693,
+                    45.43302740042114
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Libreria Acqua Alta",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle Longa Santa Maria Formosa",
+                "housenumber": "5176b",
+                "lon": 12.3422748,
+                "lat": 45.437971,
+                "state_code": "VEN",
+                "formatted": "Libreria Acqua Alta, Calle Longa Santa Maria Formosa, 5176b, 30122 Venice VE, Italy",
+                "address_line1": "Libreria Acqua Alta",
+                "address_line2": "Calle Longa Santa Maria Formosa, 5176b, 30122 Venice VE, Italy",
+                "categories": [
+                    "commercial",
+                    "commercial.books",
+                    "tourism",
+                    "tourism.attraction"
+                ],
+                "details": [
+                    "details",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Libreria Acqua Alta",
+                        "shop": "books",
+                        "phone": "+39 0412960841",
+                        "osm_id": 676820117,
+                        "name:ru": "Книжный магазин",
+                        "tourism": "attraction",
+                        "website": "https://libreriaacquaaltavenezia.myadj.it/v/libreriaacquaaltavenezia",
+                        "osm_type": "n",
+                        "addr:place": "Castello",
+                        "addr:street": "Calle Longa Santa Maria Formosa",
+                        "addr:postcode": 30122,
+                        "addr:housenumber": "5176b"
+                    }
+                },
+                "website": "https://libreriaacquaaltavenezia.myadj.it/v/libreriaacquaaltavenezia",
+                "name_international": {
+                    "ru": "Книжный магазин"
+                },
+                "contact": {
+                    "phone": "+39 0412960841"
+                },
+                "commercial": {
+                    "type": "books"
+                },
+                "place_id": "51687d80a43eaf2840598ab3096f0fb84640f00103f90195745728000000009203134c6962726572696120416371756120416c7461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.342274799999998,
+                    45.437971000420546
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Biblioteca galleggiante",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30132",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "M",
+                "lon": 12.378842917212388,
+                "lat": 45.43764455,
+                "state_code": "VEN",
+                "formatted": "Biblioteca galleggiante, M, 30132 Venice VE, Italy",
+                "address_line1": "Biblioteca galleggiante",
+                "address_line2": "M, 30132 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.historic",
+                    "building.public_and_civil",
+                    "building.tourism",
+                    "education",
+                    "education.library",
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights",
+                    "tourism.sights.memorial",
+                    "tourism.sights.memorial.ship"
+                ],
+                "details": [
+                    "details",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Biblioteca galleggiante",
+                        "level": 0,
+                        "osm_id": 1136329028,
+                        "amenity": "library",
+                        "toilets": "yes",
+                        "tourism": "attraction",
+                        "website": "https://lagooneyes.it/",
+                        "alt_name": "Impetus",
+                        "building": "ship",
+                        "historic": "ship",
+                        "operator": "Marialuisa Debin",
+                        "osm_type": "w",
+                        "kids_area": "no",
+                        "ship:type": "tugboat",
+                        "wheelchair": "no",
+                        "contact:email": "debinmarialuisa@gmail.com",
+                        "changing_table": "no",
+                        "contact:mobile": "+39 340 563 6466",
+                        "toilets:access": "customers",
+                        "contact:facebook": "mostragalleggiante",
+                        "toilets:wheelchair": "no"
+                    }
+                },
+                "website": "https://lagooneyes.it/",
+                "operator": "Marialuisa Debin",
+                "name_other": {
+                    "alt_name": "Impetus"
+                },
+                "contact": {
+                    "email": "debinmarialuisa@gmail.com"
+                },
+                "facilities": {
+                    "wheelchair": false,
+                    "toilets": true,
+                    "changing_table": false
+                },
+                "historic": {
+                    "type": "ship"
+                },
+                "building": {
+                    "type": "ship"
+                },
+                "place_id": "51357fe7b2f7c12840591daa93bc04b84640f00102f9014401bb43000000009203174269626c696f746563612067616c6c65676769616e7465"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.37884291721239,
+                    45.43764455042058
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Scuola Grande dei Carmini",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle de la Scuola",
+                "lon": 12.3223844,
+                "lat": 45.4336995,
+                "state_code": "VEN",
+                "formatted": "Scuola Grande dei Carmini, Calle de la Scuola, 30123 Venice VE, Italy",
+                "address_line1": "Scuola Grande dei Carmini",
+                "address_line2": "Calle de la Scuola, 30123 Venice VE, Italy",
+                "categories": [
+                    "tourism",
+                    "tourism.attraction"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Scuola Grande dei Carmini",
+                        "osm_id": 2189647589,
+                        "tourism": "attraction",
+                        "osm_type": "n",
+                        "wikidata": "Q1641449",
+                        "wikipedia": "it:Scuola Grande dei Carmini",
+                        "wheelchair": "no",
+                        "opening_hours": "Mo-Su 11:00-16:00",
+                        "wikimedia_commons": "Category:Scuola Grande dei Carmini (Venice)"
+                    }
+                },
+                "opening_hours": "Mo-Su 11:00-16:00",
+                "facilities": {
+                    "wheelchair": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q1641449",
+                    "wikipedia": "it:Scuola Grande dei Carmini",
+                    "wikimedia_commons": "Category:Scuola Grande dei Carmini (Venice)"
+                },
+                "place_id": "512e7b6d910fa5284059cd4c197783b74640f00103f901e55e8382000000009203195363756f6c61204772616e646520646569204361726d696e69"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3223844,
+                    45.43369950042106
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arsenale di Venezia",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30132",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta Rio della Tana",
+                "lon": 12.3533364,
+                "lat": 45.4354304,
+                "state_code": "VEN",
+                "formatted": "Arsenale di Venezia, Fondamenta Rio della Tana, 30132 Venice VE, Italy",
+                "address_line1": "Arsenale di Venezia",
+                "address_line2": "Fondamenta Rio della Tana, 30132 Venice VE, Italy",
+                "categories": [
+                    "tourism",
+                    "tourism.attraction"
+                ],
+                "details": [
+                    "details",
+                    "details.facilities",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Arsenale di Venezia",
+                        "osm_id": 2189685759,
+                        "tourism": "attraction",
+                        "website": "arsenale.comune.venezia.it",
+                        "int_name": "Venetian Arsenal",
+                        "osm_type": "n",
+                        "wikidata": "Q1262248",
+                        "wikipedia": "it:Arsenale di Venezia",
+                        "attraction": "history",
+                        "wheelchair": "no",
+                        "wikipedia:en": "Venetian Arsenal",
+                        "description:en": "Complex of former shipyards and armories supporting Venetian naval power. Source: Wikipedia.en"
+                    }
+                },
+                "website": "arsenale.comune.venezia.it",
+                "description_international": {
+                    "en": "Complex of former shipyards and armories supporting Venetian naval power. Source: Wikipedia.en"
+                },
+                "facilities": {
+                    "wheelchair": false
+                },
+                "wiki_and_media": {
+                    "wikidata": "Q1262248",
+                    "wikipedia": "it:Arsenale di Venezia"
+                },
+                "place_id": "5106f93482e8b4284059f1bef02ebcb74640f00103f901fff3838200000000920313417273656e616c652064692056656e657a6961"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3533364,
+                    45.43543040042085
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Forte Malamocco",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "village": "Malamocco",
+                "postcode": "30126",
+                "suburb": "Lido-Pellestrina",
+                "street": "Via del Forte",
+                "lon": 12.3419802,
+                "lat": 45.3716526,
+                "state_code": "VEN",
+                "formatted": "Forte Malamocco, Via del Forte, 30126 Venice VE, Italy",
+                "address_line1": "Forte Malamocco",
+                "address_line2": "Via del Forte, 30126 Venice VE, Italy",
+                "categories": [
+                    "tourism",
+                    "tourism.attraction",
+                    "tourism.sights",
+                    "tourism.sights.fort"
+                ],
+                "details": [
+                    "details",
+                    "details.historic",
+                    "details.wiki_and_media"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Forte Malamocco",
+                        "osm_id": 2345312294,
+                        "tourism": "attraction",
+                        "website": "http://www.fortificazioni.net/forti/Malamocco.htm",
+                        "historic": "fort",
+                        "osm_type": "n",
+                        "wikidata": "Q73002759",
+                        "start_date": 1847
+                    }
+                },
+                "website": "http://www.fortificazioni.net/forti/Malamocco.htm",
+                "wiki_and_media": {
+                    "wikidata": "Q73002759"
+                },
+                "historic": {
+                    "type": "fort",
+                    "start_date": 1847
+                },
+                "place_id": "5154c25d0718af2840592b28fa4f92af4640f00103f90126a0ca8b0000000092030f466f727465204d616c616d6f63636f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.341980200000002,
+                    45.37165260042851
+                ]
+            }
+        }
+    ]
+}

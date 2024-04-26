@@ -1,0 +1,1629 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Venissa Il Ristorante",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "village": "Burano",
+                "postcode": "30142",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Ponte Longo",
+                "housenumber": "3",
+                "lon": 12.41124501669264,
+                "lat": 45.4882967,
+                "state_code": "VEN",
+                "formatted": "Venissa Il Ristorante, Ponte Longo, 3, 30142 Venice VE, Italy",
+                "address_line1": "Venissa Il Ristorante",
+                "address_line2": "Ponte Longo, 3, 30142 Venice VE, Italy",
+                "categories": [
+                    "building",
+                    "building.catering",
+                    "building.commercial",
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Venissa Il Ristorante",
+                        "phone": "+39 0415272281",
+                        "osm_id": 176655196,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "smoking": "outside",
+                        "website": "https://www.venissa.it/",
+                        "building": "retail",
+                        "capacity": 25,
+                        "osm_type": "w",
+                        "addr:city": "Venezia",
+                        "wheelchair": "yes",
+                        "addr:street": "Fondamenta Santa Caterina - Isola di Mazzorbo",
+                        "addr:postcode": 30142,
+                        "opening_hours": "Mo-Su 12:00-14:30,19:00-20:30; Tu off",
+                        "addr:housenumber": 3
+                    }
+                },
+                "website": "https://www.venissa.it/",
+                "opening_hours": "Mo-Su 12:00-14:30,19:00-20:30; Tu off",
+                "contact": {
+                    "phone": "+39 0415272281"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "smoking": true
+                },
+                "catering": {
+                    "cuisine": "italian",
+                    "capacity": 25
+                },
+                "building": {
+                    "type": "retail"
+                },
+                "place_id": "51fbacf2b48ed228405918839b8180be4640f00102f9015c8b870a0000000092031556656e6973736120496c20526973746f72616e7465"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.411245016692638,
+                    45.48829670041431
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Gam Gam",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Ghetto Vecchio",
+                "housenumber": "1122",
+                "lon": 12.3250505,
+                "lat": 45.4441102,
+                "state_code": "VEN",
+                "formatted": "Gam Gam, Ghetto Vecchio, 1122, 30121 Venice VE, Italy",
+                "address_line1": "Gam Gam",
+                "address_line2": "Ghetto Vecchio, 1122, 30121 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "kosher",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Gam Gam",
+                        "phone": "+39 366 250 4505",
+                        "osm_id": 250421437,
+                        "amenity": "restaurant",
+                        "website": "http://gamgamkosher.com",
+                        "osm_type": "n",
+                        "addr:place": "Cannaregio",
+                        "wheelchair": "limited",
+                        "addr:street": "Ghetto Vecchio",
+                        "diet:kosher": "yes",
+                        "addr:postcode": 30121,
+                        "opening_hours": "Su-Th 12:00-22:00, Fr 12:00-15:00",
+                        "addr:housenumber": 1122
+                    }
+                },
+                "website": "http://gamgamkosher.com",
+                "opening_hours": "Su-Th 12:00-22:00, Fr 12:00-15:00",
+                "contact": {
+                    "phone": "+39 366 250 4505"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    }
+                },
+                "catering": {
+                    "diet": {
+                        "kosher": true
+                    }
+                },
+                "place_id": "51ce18e6046da6284059be4f619ad8b84640f00103f901bd20ed0e0000000092030747616d2047616d"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3250505,
+                    45.444110200419786
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "La Sosta",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "village": "Tessera",
+                "suburb": "Favaro Veneto",
+                "street": "Via Triestina",
+                "housenumber": "140a",
+                "lon": 12.3267194,
+                "lat": 45.5034013,
+                "state_code": "VEN",
+                "formatted": "La Sosta, Via Triestina, 140a, Venice VE, Italy",
+                "address_line1": "La Sosta",
+                "address_line2": "Via Triestina, 140a, Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "catering.restaurant.pizza"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "La Sosta",
+                        "phone": "+39 041 542 0427",
+                        "osm_id": 556434361,
+                        "amenity": "restaurant",
+                        "cuisine": "italian;pizza",
+                        "website": "https://bar-la-sosta.business.site/",
+                        "osm_type": "n",
+                        "addr:street": "Via Triestina",
+                        "opening_hours": "Mo-Sa 06:30-20:00; Su 07:00-20:00",
+                        "addr:housenumber": "140a"
+                    }
+                },
+                "website": "https://bar-la-sosta.business.site/",
+                "opening_hours": "Mo-Sa 06:30-20:00; Su 07:00-20:00",
+                "contact": {
+                    "phone": "+39 041 542 0427"
+                },
+                "catering": {
+                    "cuisine": "italian;pizza"
+                },
+                "place_id": "5100f0e3c347a728405982042d746fc04640f00103f901b9832a21000000009203084c6120536f737461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.326719400000002,
+                    45.50340130041242
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trattoria Ai Cacciatori",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30133",
+                "district": "Giudecca",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta del Ponte Piccolo",
+                "housenumber": "320",
+                "lon": 12.3277569,
+                "lat": 45.4260644,
+                "state_code": "VEN",
+                "formatted": "Trattoria Ai Cacciatori, Fondamenta del Ponte Piccolo, 320, 30133 Venice VE, Italy",
+                "address_line1": "Trattoria Ai Cacciatori",
+                "address_line2": "Fondamenta del Ponte Piccolo, 320, 30133 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Trattoria Ai Cacciatori",
+                        "email": "info@aicacciatori.it",
+                        "phone": "+390415285849",
+                        "osm_id": 1024860795,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "name:de": "Trattoria Ai Cacciatori",
+                        "name:en": "Trattoria Ai Cacciatori",
+                        "website": "http://www.aicacciatori.it",
+                        "operator": "Claudio Renier e Massimiliano Gallo",
+                        "osm_type": "n",
+                        "addr:street": "Fondamenta del Ponte Piccolo",
+                        "opening_hours": "24/7",
+                        "addr:housenumber": 320
+                    }
+                },
+                "website": "http://www.aicacciatori.it",
+                "opening_hours": "24/7",
+                "operator": "Claudio Renier e Massimiliano Gallo",
+                "name_international": {
+                    "de": "Trattoria Ai Cacciatori",
+                    "en": "Trattoria Ai Cacciatori"
+                },
+                "contact": {
+                    "phone": "+390415285849",
+                    "email": "info@aicacciatori.it"
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "51a2139dc0cfa7284059b0e63c4789b64640f00103f9017b22163d0000000092031754726174746f72696120416920436163636961746f7269"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3277569,
+                    45.42606440042198
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Osteria del Lupo Nero",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Mestre",
+                "postcode": "30174",
+                "suburb": "Carpenedo",
+                "street": "Via Giorgio Ferro",
+                "housenumber": "21",
+                "lon": 12.2405315,
+                "lat": 45.494271,
+                "state_code": "VEN",
+                "formatted": "Osteria del Lupo Nero, Via Giorgio Ferro, 21, 30174 Venice VE, Italy",
+                "address_line1": "Osteria del Lupo Nero",
+                "address_line2": "Via Giorgio Ferro, 21, 30174 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Osteria del Lupo Nero",
+                        "email": "info@osterialuponero.it",
+                        "phone": "+39 041961180",
+                        "osm_id": 1026529493,
+                        "amenity": "restaurant",
+                        "cuisine": "osteria",
+                        "website": "http://www.osterialuponero.it",
+                        "facebook": "https://www.facebook.com/osterialuponero",
+                        "osm_type": "n",
+                        "addr:city": "Mestre",
+                        "wheelchair": "limited",
+                        "addr:street": "Via Giorgio Ferro",
+                        "addr:postcode": 30174,
+                        "opening_hours": "Mo-Fr 12:00-14:30,18:30-22:30; Sa-Su 11:30-14:30,18:30-22:30",
+                        "addr:housenumber": 21,
+                        "delivery:covid19": "yes",
+                        "delivery:description:it": "Attivazione servizio a domicilio di generi di prima necessità per COVID-19"
+                    }
+                },
+                "website": "http://www.osterialuponero.it",
+                "opening_hours": "Mo-Fr 12:00-14:30,18:30-22:30; Sa-Su 11:30-14:30,18:30-22:30",
+                "contact": {
+                    "phone": "+39 041961180",
+                    "email": "info@osterialuponero.it"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    },
+                    "delivery_covid19": true
+                },
+                "catering": {
+                    "cuisine": "osteria"
+                },
+                "place_id": "51cd50dcf1267b2840599611ab4544bf4640f00103f901d5982f3d000000009203154f7374657269612064656c204c75706f204e65726f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.240531499999998,
+                    45.49427100041355
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Anice Stellato",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta de la Sensa",
+                "housenumber": "3272",
+                "lon": 12.3286539,
+                "lat": 45.4463627,
+                "state_code": "VEN",
+                "formatted": "Anice Stellato, Fondamenta de la Sensa, 3272, 30121 Venice VE, Italy",
+                "address_line1": "Anice Stellato",
+                "address_line2": "Fondamenta de la Sensa, 3272, 30121 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Anice Stellato",
+                        "email": "osterianicestellato@gmail.com",
+                        "phone": "+39 041 720744",
+                        "osm_id": 1403411864,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "name:en": "Anice Stellato",
+                        "website": "https://www.osterianicestellato.com/",
+                        "osm_type": "n",
+                        "addr:city": "Venezia",
+                        "addr:place": "Cannaregio",
+                        "addr:street": "Fondamenta de la Sensa",
+                        "addr:postcode": 30121,
+                        "opening_hours": "We-Su 10:30-15:00, 18:30-00:00",
+                        "addr:housenumber": 3272,
+                        "delivery:covid19": "yes",
+                        "delivery:description:it": "Attivazione servizio a domicilio di generi di prima necessità per COVID-19"
+                    }
+                },
+                "website": "https://www.osterianicestellato.com/",
+                "opening_hours": "We-Su 10:30-15:00, 18:30-00:00",
+                "name_international": {
+                    "en": "Anice Stellato"
+                },
+                "contact": {
+                    "phone": "+39 041 720744",
+                    "email": "osterianicestellato@gmail.com"
+                },
+                "facilities": {
+                    "delivery_covid19": true
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "51dd67f05245a82840595f3ab86922b94640f00103f901985da6530000000092030e416e696365205374656c6c61746f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3286539,
+                    45.446362700419506
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Why&Not",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "3849",
+                "lon": 12.3340862,
+                "lat": 45.4416476,
+                "state_code": "VEN",
+                "formatted": "Why&Not, 3849, 30121 Venice VE, Italy",
+                "address_line1": "Why&Not",
+                "address_line2": "3849, 30121 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant"
+                ],
+                "details": [
+                    "details",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "cash": "only",
+                        "name": "Why&Not",
+                        "email": "whynotvenice@gmail.com",
+                        "phone": "+390412689322",
+                        "osm_id": 1426810569,
+                        "amenity": "restaurant",
+                        "website": "https://whynot.metro.bar",
+                        "osm_type": "n",
+                        "addr:place": "Cannaregio",
+                        "description": "Osteria and Bistro",
+                        "addr:postcode": 30121,
+                        "opening_hours": "Mo-Su 09:00-23:00",
+                        "addr:housenumber": 3849
+                    }
+                },
+                "website": "https://whynot.metro.bar",
+                "opening_hours": "Mo-Su 09:00-23:00",
+                "description": "Osteria and Bistro",
+                "contact": {
+                    "phone": "+390412689322",
+                    "email": "whynotvenice@gmail.com"
+                },
+                "place_id": "51fe16ae580dab284059a11498e887b84640f00103f901c9660b5500000000920307576879264e6f74"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.334086199999998,
+                    45.44164760042009
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ristorante Valentino",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30126",
+                "suburb": "Lido-Pellestrina",
+                "street": "Via Sandro Gallo",
+                "housenumber": "81",
+                "lon": 12.3657853,
+                "lat": 45.4082382,
+                "state_code": "VEN",
+                "formatted": "Ristorante Valentino, Via Sandro Gallo, 81, 30126 Venice VE, Italy",
+                "address_line1": "Ristorante Valentino",
+                "address_line2": "Via Sandro Gallo, 81, 30126 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Ristorante Valentino",
+                        "email": "valentinoristorante@libero.it",
+                        "phone": "+39 041 5260128",
+                        "osm_id": 1459907296,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "website": "https://www.ristorantevalentinovenezia.com/",
+                        "osm_type": "n",
+                        "addr:city": "Venezia",
+                        "addr:street": "Via Sandro Gallo",
+                        "addr:postcode": 30126,
+                        "opening_hours": "12:30-19:30",
+                        "addr:housenumber": 81,
+                        "contact:facebook": "valentinolidovenezia",
+                        "delivery:covid19": "yes"
+                    }
+                },
+                "website": "https://www.ristorantevalentinovenezia.com/",
+                "opening_hours": "12:30-19:30",
+                "contact": {
+                    "phone": "+39 041 5260128",
+                    "email": "valentinoristorante@libero.it"
+                },
+                "facilities": {
+                    "delivery_covid19": true
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "5110b7f93548bb28405959e63b2641b44640f00103f901e06a045700000000920314526973746f72616e74652056616c656e74696e6f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.365785299999999,
+                    45.408238200424144
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Spaghetteria 6342 A Le Tole",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "6342",
+                "lon": 12.3424445,
+                "lat": 45.438777,
+                "state_code": "VEN",
+                "formatted": "Spaghetteria 6342 A Le Tole, 6342, 30122 Venice VE, Italy",
+                "address_line1": "Spaghetteria 6342 A Le Tole",
+                "address_line2": "6342, 30122 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "catering.restaurant.pizza",
+                    "internet_access"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Spaghetteria 6342 A Le Tole",
+                        "phone": "+39 0414768410",
+                        "osm_id": 1521958082,
+                        "amenity": "restaurant",
+                        "cuisine": "italian_pizza",
+                        "website": "https://www.6342aletole.it/",
+                        "osm_type": "n",
+                        "addr:place": "Castello",
+                        "addr:postcode": 30122,
+                        "opening_hours": "Mo-Su 12:00-15:30, 19:00-22:30",
+                        "internet_access": "wlan",
+                        "addr:housenumber": 6342
+                    }
+                },
+                "website": "https://www.6342aletole.it/",
+                "opening_hours": "Mo-Su 12:00-15:30, 19:00-22:30",
+                "contact": {
+                    "phone": "+39 0414768410"
+                },
+                "facilities": {
+                    "internet_access": true
+                },
+                "catering": {
+                    "cuisine": "italian_pizza"
+                },
+                "place_id": "51e063b0e254af2840597a8541d829b84640f00103f901c23cb75a0000000092031b53706167686574746572696120363334322041204c6520546f6c65"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3424445,
+                    45.438777000420444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "L'impronta",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "3815",
+                "lon": 12.3254031,
+                "lat": 45.4358593,
+                "state_code": "VEN",
+                "formatted": "L'impronta, 3815, 30123 Venice VE, Italy",
+                "address_line1": "L'impronta",
+                "address_line2": "3815, 30123 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "bar": "yes",
+                        "name": "L'impronta",
+                        "phone": "+39 041 2750386",
+                        "osm_id": 2165495948,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "website": "https://improntarestaurantvenice.com/",
+                        "alt_name": "L'impronta Cafe",
+                        "osm_type": "n",
+                        "ref:vatin": "IT04419270279",
+                        "addr:place": "Dorsoduro",
+                        "wheelchair": "yes",
+                        "addr:postcode": 30123,
+                        "contact:email": "info@improntacafevenice.com",
+                        "contact:phone": "+39 041 275 0386",
+                        "opening_hours": "Mo-Fr 07:00-02:00; Sa 08:00-02:00",
+                        "addr:housenumber": 3815,
+                        "contact:facebook": "https://www.facebook.com/improntacafe",
+                        "contact:instagram": "https://www.instagram.com/improntavenezia/"
+                    }
+                },
+                "website": "https://improntarestaurantvenice.com/",
+                "opening_hours": "Mo-Fr 07:00-02:00; Sa 08:00-02:00",
+                "name_other": {
+                    "alt_name": "L'impronta Cafe"
+                },
+                "ref_other": {
+                    "vatin": "IT04419270279"
+                },
+                "contact": {
+                    "phone": "+39 041 2750386",
+                    "phone_other": [
+                        "+39 041 275 0386"
+                    ],
+                    "email": "info@improntacafevenice.com"
+                },
+                "facilities": {
+                    "wheelchair": true
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "51b608313c9ba62840597e7bd03ccab74640f00103f9018cd812810000000092030a4c27696d70726f6e7461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.325403099999999,
+                    45.4358593004208
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Estro - Vino e Cucina",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30123",
+                "district": "Dorsoduro",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle San Pantalon",
+                "housenumber": "3778",
+                "lon": 12.3250595,
+                "lat": 45.4360424,
+                "state_code": "VEN",
+                "formatted": "Estro - Vino e Cucina, Calle San Pantalon, 3778, 30123 Venice VE, Italy",
+                "address_line1": "Estro - Vino e Cucina",
+                "address_line2": "Calle San Pantalon, 3778, 30123 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "commercial",
+                    "commercial.food_and_drink",
+                    "commercial.food_and_drink.drinks"
+                ],
+                "details": [
+                    "details",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Estro - Vino e Cucina",
+                        "shop": "wine",
+                        "email": "estro.enoteca@gmail.com",
+                        "phone": "+39 041 476 4914",
+                        "osm_id": 2165495950,
+                        "amenity": "restaurant",
+                        "name:it": "Estro - Vino e Cucina",
+                        "website": "http://www.estrovenezia.com",
+                        "facebook": "https://it-it.facebook.com/estrovinoecucina/",
+                        "osm_type": "n",
+                        "addr:city": "Venezia",
+                        "addr:street": "Calle San Pantalon",
+                        "addr:postcode": 30123,
+                        "opening_hours": "We-Mo,PH 12:00-23:00",
+                        "addr:housenumber": 3778,
+                        "delivery:covid19": "yes",
+                        "delivery:description:it": "Attivazione servizio a domicilio di generi di prima necessità per COVID-19"
+                    }
+                },
+                "website": "http://www.estrovenezia.com",
+                "opening_hours": "We-Mo,PH 12:00-23:00",
+                "name_international": {
+                    "it": "Estro - Vino e Cucina"
+                },
+                "contact": {
+                    "phone": "+39 041 476 4914",
+                    "email": "estro.enoteca@gmail.com"
+                },
+                "facilities": {
+                    "delivery_covid19": true
+                },
+                "commercial": {
+                    "type": "wine"
+                },
+                "place_id": "511a82e3326ea6284059fdbcc43cd0b74640f00103f9018ed8128100000000920315457374726f202d2056696e6f206520437563696e61"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.325059499999998,
+                    45.43604240042075
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Taverna al Remer",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "5701",
+                "lon": 12.3364631,
+                "lat": 45.4394521,
+                "state_code": "VEN",
+                "formatted": "Taverna al Remer, 5701, 30121 Venice VE, Italy",
+                "address_line1": "Taverna al Remer",
+                "address_line2": "5701, 30121 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Taverna al Remer",
+                        "email": "taverna.remer@yahoo.it",
+                        "phone": "+39 041 522 8789",
+                        "osm_id": 2205844956,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "website": "https://tavernaremer.com/",
+                        "osm_type": "n",
+                        "addr:place": "Cannaregio",
+                        "addr:postcode": 30121,
+                        "opening_hours": "Mo-Su 11:00-00:00",
+                        "addr:housenumber": 5701
+                    }
+                },
+                "website": "https://tavernaremer.com/",
+                "opening_hours": "Mo-Su 11:00-00:00",
+                "contact": {
+                    "phone": "+39 041 522 8789",
+                    "email": "taverna.remer@yahoo.it"
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "511d9f35e444ac28405963bb67f73fb84640f00103f901dc857a830000000092031054617665726e6120616c2052656d6572"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.336463099999998,
+                    45.43945210042036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Al Nono Risorto",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30135",
+                "district": "Santa Croce",
+                "suburb": "Venezia-Murano-Burano",
+                "housenumber": "2338",
+                "lon": 12.3314115,
+                "lat": 45.4396562,
+                "state_code": "VEN",
+                "formatted": "Al Nono Risorto, 2338, 30135 Venice VE, Italy",
+                "address_line1": "Al Nono Risorto",
+                "address_line2": "2338, 30135 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Al Nono Risorto",
+                        "level": 0,
+                        "phone": "+39 041 524 1169",
+                        "osm_id": 2249916134,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "smoking": "outside",
+                        "toilets": "yes",
+                        "website": "https://alnonorisortovenezia.com/",
+                        "osm_type": "n",
+                        "takeaway": "yes",
+                        "addr:place": "Santa Croce",
+                        "wheelchair": "limited",
+                        "reservation": "recommended",
+                        "addr:postcode": 30135,
+                        "opening_hours": "Mo-Tu,Th-Su 12:00-15:00,18:00-22:30; PH closed",
+                        "toilets:access": "customers",
+                        "outdoor_seating": "yes",
+                        "addr:housenumber": 2338,
+                        "toilets:wheelchair": "no"
+                    }
+                },
+                "website": "https://alnonorisortovenezia.com/",
+                "opening_hours": "Mo-Tu,Th-Su 12:00-15:00,18:00-22:30; PH closed",
+                "contact": {
+                    "phone": "+39 041 524 1169"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    },
+                    "smoking": true,
+                    "toilets": true,
+                    "outdoor_seating": true,
+                    "takeaway": true
+                },
+                "catering": {
+                    "cuisine": "italian",
+                    "reservation": "recommended"
+                },
+                "place_id": "515f09a4c4aea9284059ff2485a746b84640f00103f901e6fe1a860000000092030f416c204e6f6e6f205269736f72746f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3314115,
+                    45.43965620042035
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Trattoria dai Tosi",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30132",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Seco Marina",
+                "housenumber": "738",
+                "lon": 12.3571804,
+                "lat": 45.4311717,
+                "state_code": "VEN",
+                "formatted": "Trattoria dai Tosi, Seco Marina, 738, 30132 Venice VE, Italy",
+                "address_line1": "Trattoria dai Tosi",
+                "address_line2": "Seco Marina, 738, 30132 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "catering.restaurant.pizza",
+                    "internet_access",
+                    "internet_access.free",
+                    "vegetarian",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities",
+                    "details.payment"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Trattoria dai Tosi",
+                        "level": 0,
+                        "osm_id": 2272199411,
+                        "amenity": "restaurant",
+                        "cuisine": "italian;pizza",
+                        "name:it": "Trattoria dai Tosi",
+                        "smoking": "outside",
+                        "toilets": "yes",
+                        "website": "https://www.trattoriadaitosi.it/",
+                        "osm_type": "n",
+                        "takeaway": "yes",
+                        "highchair": "yes",
+                        "kids_area": "no",
+                        "check_date": "2023-09-23",
+                        "wheelchair": "yes",
+                        "addr:street": "Seco Marina",
+                        "reservation": "recommended",
+                        "payment:visa": "yes",
+                        "contact:email": "tosetti738@gmail.com",
+                        "contact:phone": "+39 041 523 7102",
+                        "opening_hours": "Mo-Tu,Th-Fr 12:00-14:00,19:00-21:30; Sa-Su 12:00-14:30,19:00-21:30; PH closed",
+                        "changing_table": "no",
+                        "toilets:access": "customers",
+                        "diet:vegetarian": "yes",
+                        "internet_access": "wlan",
+                        "outdoor_seating": "yes",
+                        "addr:housenumber": 738,
+                        "contact:facebook": "tosetti738",
+                        "payment:mastercard": "yes",
+                        "toilets:wheelchair": "no",
+                        "internet_access:fee": "no"
+                    }
+                },
+                "website": "https://www.trattoriadaitosi.it/",
+                "opening_hours": "Mo-Tu,Th-Fr 12:00-14:00,19:00-21:30; Sa-Su 12:00-14:30,19:00-21:30; PH closed",
+                "name_international": {
+                    "it": "Trattoria dai Tosi"
+                },
+                "contact": {
+                    "phone": "+39 041 523 7102",
+                    "email": "tosetti738@gmail.com"
+                },
+                "facilities": {
+                    "internet_access": true,
+                    "wheelchair": true,
+                    "smoking": true,
+                    "toilets": true,
+                    "changing_table": false,
+                    "outdoor_seating": true,
+                    "takeaway": true
+                },
+                "payment_options": {
+                    "visa": true,
+                    "mastercard": true
+                },
+                "catering": {
+                    "cuisine": "italian;pizza",
+                    "diet": {
+                        "vegetarian": true
+                    },
+                    "reservation": "recommended"
+                },
+                "place_id": "515d8b7159e0b62840599e2260a230b74640f00103f901f3026f870000000092031254726174746f7269612064616920546f7369"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.357180399999999,
+                    45.43117170042136
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Nevodi Pizzalab",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30132",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Via Giuseppe Garibaldi",
+                "housenumber": "1341",
+                "lon": 12.3538926,
+                "lat": 45.4322872,
+                "state_code": "VEN",
+                "formatted": "Nevodi Pizzalab, Via Giuseppe Garibaldi, 1341, 30132 Venice VE, Italy",
+                "address_line1": "Nevodi Pizzalab",
+                "address_line2": "Via Giuseppe Garibaldi, 1341, 30132 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "internet_access",
+                    "internet_access.free"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Nevodi Pizzalab",
+                        "level": 0,
+                        "osm_id": 2340191819,
+                        "amenity": "restaurant",
+                        "cuisine": "fish;italian;pizza;regional",
+                        "smoking": "outside",
+                        "website": "https://www.nevodi.com/pizzalab",
+                        "operator": "Nevodi",
+                        "osm_type": "n",
+                        "takeaway": "only",
+                        "addr:city": "Venezia",
+                        "kids_area": "no",
+                        "addr:street": "Via Giuseppe Garibaldi",
+                        "reservation": "no",
+                        "microbrewery": "no",
+                        "self_service": "no",
+                        "contact:phone": "+39 041 523 8173",
+                        "opening_hours": "Mo-Su 12:00-14:30, 18:00-21:30",
+                        "changing_table": "no",
+                        "internet_access": "no",
+                        "outdoor_seating": "no",
+                        "addr:housenumber": 1341,
+                        "contact:facebook": "Nevodi Pizzalab",
+                        "contact:instagram": "NevodiPizzalab",
+                        "internet_access:fee": "no"
+                    }
+                },
+                "website": "https://www.nevodi.com/pizzalab",
+                "opening_hours": "Mo-Su 12:00-14:30, 18:00-21:30",
+                "operator": "Nevodi",
+                "contact": {
+                    "phone": "+39 041 523 8173"
+                },
+                "facilities": {
+                    "internet_access": false,
+                    "smoking": true,
+                    "changing_table": false,
+                    "outdoor_seating": false,
+                    "takeaway": true
+                },
+                "catering": {
+                    "cuisine": "fish;italian;pizza;regional"
+                },
+                "place_id": "51c3972e6931b5284059ef24de2f55b74640f00103f9014b7e7c8b0000000092030f4e65766f64692050697a7a616c6162"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3538926,
+                    45.43228720042122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ae Oche Docks",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Mestre",
+                "postcode": "30172",
+                "district": "Quartiere Aretusa",
+                "suburb": "Mestre-Carpenedo",
+                "street": "Viale Ancona",
+                "housenumber": "18",
+                "lon": 12.2505739,
+                "lat": 45.4836306,
+                "state_code": "VEN",
+                "formatted": "Ae Oche Docks, Viale Ancona, 18, 30172 Venice VE, Italy",
+                "address_line1": "Ae Oche Docks",
+                "address_line2": "Viale Ancona, 18, 30172 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.burger",
+                    "catering.restaurant.sandwich"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Ae Oche Docks",
+                        "email": "aeochedocks@gmail.com",
+                        "phone": "+39 041 5321892;+39 340 4529370",
+                        "osm_id": 2689605789,
+                        "amenity": "restaurant",
+                        "cuisine": "sandwich;burger",
+                        "website": "http://www.aeochedocks.com",
+                        "facebook": "https://www.facebook.com/aeochemestredocks",
+                        "osm_type": "n",
+                        "addr:city": "Mestre",
+                        "addr:street": "Viale Ancona",
+                        "addr:postcode": 30172,
+                        "opening_hours": "Mo-Su 18:30-21:30",
+                        "addr:housenumber": 18,
+                        "delivery:covid19": "yes",
+                        "delivery:description:it": "Attivazione servizio a domicilio di generi di prima necessità per COVID-19"
+                    }
+                },
+                "website": "http://www.aeochedocks.com",
+                "opening_hours": "Mo-Su 18:30-21:30",
+                "contact": {
+                    "phone": "+39 041 5321892;+39 340 4529370",
+                    "email": "aeochedocks@gmail.com"
+                },
+                "facilities": {
+                    "delivery_covid19": true
+                },
+                "catering": {
+                    "cuisine": "sandwich;burger"
+                },
+                "place_id": "515b76e3384b802840593c10869be7bd4640f00103f9019d2050a00000000092030d4165204f63686520446f636b73"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.250573899999997,
+                    45.4836306004149
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Aciugheta",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Campo Santi Filippo e Giacomo",
+                "housenumber": "4357",
+                "lon": 12.3415091,
+                "lat": 45.435175,
+                "state_code": "VEN",
+                "formatted": "Aciugheta, Campo Santi Filippo e Giacomo, 4357, 30122 Venice VE, Italy",
+                "address_line1": "Aciugheta",
+                "address_line2": "Campo Santi Filippo e Giacomo, 4357, 30122 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.regional",
+                    "wheelchair",
+                    "wheelchair.limited"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Aciugheta",
+                        "phone": "+39 041 522 4292",
+                        "osm_id": 2932666775,
+                        "amenity": "restaurant",
+                        "cuisine": "regional",
+                        "website": "http://www.aciugheta.com/",
+                        "facebook": "https://www.facebook.com/aciugheta/",
+                        "osm_type": "n",
+                        "addr:city": "Venezia",
+                        "wheelchair": "limited",
+                        "addr:street": "Campo Santi Filippo e Giacomo",
+                        "addr:postcode": 30122,
+                        "opening_hours": "Mo-Su 12:00-23:00",
+                        "addr:housenumber": 4357,
+                        "delivery:covid19": "yes",
+                        "delivery:description:it": "Attivazione servizio a domicilio di generi di prima necessità per COVID-19"
+                    }
+                },
+                "website": "http://www.aciugheta.com/",
+                "opening_hours": "Mo-Su 12:00-23:00",
+                "contact": {
+                    "phone": "+39 041 522 4292"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "wheelchair_details": {
+                        "condition": "limited"
+                    },
+                    "delivery_covid19": true
+                },
+                "catering": {
+                    "cuisine": "regional"
+                },
+                "place_id": "51a192df47daae284059186c7dd0b3b74640f00103f90197f1ccae00000000920309416369756768657461"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.341509099999998,
+                    45.435175000420884
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ogio",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30121",
+                "district": "Cannaregio",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Fondamenta De Cannaregio",
+                "housenumber": "1037",
+                "lon": 12.3230202,
+                "lat": 45.4449982,
+                "state_code": "VEN",
+                "formatted": "Ogio, Fondamenta De Cannaregio, 1037, 30121 Venice VE, Italy",
+                "address_line1": "Ogio",
+                "address_line2": "Fondamenta De Cannaregio, 1037, 30121 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian",
+                    "production",
+                    "production.brewery",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Ogio",
+                        "email": "ogio@19-71.it",
+                        "phone": "+39 041 541 3099;+39 338 848 7610",
+                        "osm_id": 3116780944,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "toilets": "yes",
+                        "website": "https://www.ogio-ve.it/",
+                        "facebook": "https://www.facebook.com/ogiovenezia/",
+                        "osm_type": "n",
+                        "takeaway": "yes",
+                        "addr:city": "Venezia",
+                        "addr:place": "Cannaregio",
+                        "wheelchair": "yes",
+                        "addr:street": "Fondamenta De Cannaregio",
+                        "microbrewery": "yes",
+                        "addr:postcode": 30121,
+                        "opening_hours": "We-Fr 10:00-18:00; Sa-Th 11:00-18:00",
+                        "changing_table": "no",
+                        "toilets:access": "customers",
+                        "addr:housenumber": 1037,
+                        "delivery:covid19": "yes",
+                        "toilets:wheelchair": "yes",
+                        "delivery:description:it": "Attivazione servizio a domicilio di generi di prima necessità per COVID-19"
+                    }
+                },
+                "website": "https://www.ogio-ve.it/",
+                "opening_hours": "We-Fr 10:00-18:00; Sa-Th 11:00-18:00",
+                "contact": {
+                    "phone": "+39 041 541 3099;+39 338 848 7610",
+                    "email": "ogio@19-71.it"
+                },
+                "facilities": {
+                    "wheelchair": true,
+                    "toilets": true,
+                    "changing_table": false,
+                    "takeaway": true,
+                    "delivery_covid19": true
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "510fe555e762a52840596aca76b3f5b84640f00103f901904dc6b9000000009203044f67696f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.3230202,
+                    45.444998200419676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Enoteca Al Volto Osteria con Cucina",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "postcode": "30124",
+                "district": "San Marco",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle Cavalli",
+                "housenumber": "4081",
+                "lon": 12.3338713,
+                "lat": 45.4361151,
+                "state_code": "VEN",
+                "formatted": "Enoteca Al Volto Osteria con Cucina, Calle Cavalli, 4081, 30124 Venice VE, Italy",
+                "address_line1": "Enoteca Al Volto Osteria con Cucina",
+                "address_line2": "Calle Cavalli, 4081, 30124 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "catering.restaurant.italian"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Enoteca Al Volto Osteria con Cucina",
+                        "email": "info@alvoltaenoteca.com",
+                        "phone": "+39 041 5228945",
+                        "osm_id": 3156481389,
+                        "amenity": "restaurant",
+                        "cuisine": "italian",
+                        "website": "http://www.alvoltaenoteca.com",
+                        "osm_type": "n",
+                        "addr:place": "San Marco",
+                        "addr:street": "Calle Cavalli",
+                        "microbrewery": "no",
+                        "addr:postcode": 30124,
+                        "opening_hours": "10:00-16:00, 18:00-22:00",
+                        "addr:housenumber": 4081
+                    }
+                },
+                "website": "http://www.alvoltaenoteca.com",
+                "opening_hours": "10:00-16:00, 18:00-22:00",
+                "contact": {
+                    "phone": "+39 041 5228945",
+                    "email": "info@alvoltaenoteca.com"
+                },
+                "catering": {
+                    "cuisine": "italian"
+                },
+                "place_id": "516025d52df1aa284059aacc9e9ed2b74640f00103f9016d1524bc00000000920323456e6f7465636120416c20566f6c746f204f73746572696120636f6e20437563696e61"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.333871299999998,
+                    45.436115100420764
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bacarandino",
+                "country": "Italy",
+                "country_code": "it",
+                "state": "Veneto",
+                "county": "Venezia",
+                "city": "Venice",
+                "town": "Lido",
+                "postcode": "30122",
+                "district": "Castello",
+                "suburb": "Venezia-Murano-Burano",
+                "street": "Calle dei Corazzeri",
+                "housenumber": "3939",
+                "lon": 12.3476292,
+                "lat": 45.4350202,
+                "state_code": "VEN",
+                "formatted": "Bacarandino, Calle dei Corazzeri, 3939, 30122 Venice VE, Italy",
+                "address_line1": "Bacarandino",
+                "address_line2": "Calle dei Corazzeri, 3939, 30122 Venice VE, Italy",
+                "categories": [
+                    "catering",
+                    "catering.restaurant",
+                    "wheelchair",
+                    "wheelchair.yes"
+                ],
+                "details": [
+                    "details",
+                    "details.catering",
+                    "details.contact",
+                    "details.facilities"
+                ],
+                "datasource": {
+                    "sourcename": "openstreetmap",
+                    "attribution": "© OpenStreetMap contributors",
+                    "license": "Open Database License",
+                    "url": "https://www.openstreetmap.org/copyright",
+                    "raw": {
+                        "name": "Bacarandino",
+                        "phone": "+39 041 528 9859",
+                        "osm_id": 3240766156,
+                        "amenity": "restaurant",
+                        "cuisine": "cake;chicken;coffee_shop;italian;mediterranean;noodles",
+                        "website": "http://www.bacarandino.it",
+                        "capacity": 50,
+                        "osm_type": "n",
+                        "addr:city": "Venezia",
+                        "wheelchair": "yes",
+                        "addr:street": "Calle dei Corazzeri",
+                        "addr:postcode": 30122,
+                        "opening_hours": "10:00-24:00",
+                        "addr:housenumber": 3939
+                    }
+                },
+                "website": "http://www.bacarandino.it",
+                "opening_hours": "10:00-24:00",
+                "contact": {
+                    "phone": "+39 041 528 9859"
+                },
+                "facilities": {
+                    "wheelchair": true
+                },
+                "catering": {
+                    "cuisine": "cake;chicken;coffee_shop;italian;mediterranean;noodles",
+                    "capacity": 50
+                },
+                "place_id": "51ef445a74fcb12840591cf4eebdaeb74640f00103f901cc2a2ac10000000092030b4261636172616e64696e6f"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.347629199999998,
+                    45.435020200420894
+                ]
+            }
+        }
+    ]
+}

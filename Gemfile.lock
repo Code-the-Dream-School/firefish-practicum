@@ -115,6 +115,7 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.1)
+    docile (1.4.0)
     domain_name (0.6.20240107)
     dotenv (3.1.0)
     drb (2.2.1)
@@ -288,6 +289,12 @@ GEM
       websocket (~> 1.0)
     shoulda-matchers (6.2.0)
       activesupport (>= 5.2.0)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -354,6 +361,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   shoulda-matchers (~> 6.0)
+  simplecov (~> 0.22.0)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails

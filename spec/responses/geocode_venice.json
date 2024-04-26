@@ -1,0 +1,60 @@
+{
+    "results": [
+        {
+            "datasource": {
+                "sourcename": "openstreetmap",
+                "attribution": "© OpenStreetMap contributors",
+                "license": "Open Database License",
+                "url": "https://www.openstreetmap.org/copyright"
+            },
+            "country": "Italy",
+            "country_code": "it",
+            "state": "Veneto",
+            "county": "Venezia",
+            "city": "Venice",
+            "postcode": "30121-30176",
+            "lon": 12.3345898,
+            "lat": 45.4371908,
+            "state_code": "VEN",
+            "result_type": "postcode",
+            "formatted": "30121-30176 Venice, Italy",
+            "address_line1": "30121-30176 Venice",
+            "address_line2": "Italy",
+            "county_code": "VE",
+            "category": "administrative",
+            "timezone": {
+                "name": "Europe/Rome",
+                "offset_STD": "+01:00",
+                "offset_STD_seconds": 3600,
+                "offset_DST": "+02:00",
+                "offset_DST_seconds": 7200,
+                "abbreviation_STD": "CET",
+                "abbreviation_DST": "CEST"
+            },
+            "plus_code": "8FQJC8PM+VR",
+            "plus_code_short": "PM+VR Venice, Venezia, Italy",
+            "rank": {
+                "importance": 0.9110194898827333,
+                "popularity": 8.995467104553104,
+                "confidence": 1,
+                "confidence_city_level": 1,
+                "match_type": "full_match"
+            },
+            "place_id": "517e26b15a4fab284059590e3edef5b74640f00101f901c5ae000000000000c0020792030e33303132312d33303137362b6974",
+            "bbox": {
+                "lon1": 12.1668349,
+                "lat1": 45.2312466,
+                "lon2": 12.5965709,
+                "lat2": 45.5779981
+            }
+        }
+    ],
+    "query": {
+        "text": "Venice Italy",
+        "parsed": {
+            "city": "venice",
+            "country": "italy",
+            "expected_type": "city"
+        }
+    }
+}

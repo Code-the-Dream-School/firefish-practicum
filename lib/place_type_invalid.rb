@@ -1,0 +1,2 @@
+class PlaceTypeInvalid < StandardError
+end

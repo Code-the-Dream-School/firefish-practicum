@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :attraction do
     association :city
-    attraction_place_id { SecureRandom.hex(91) }
-    name { Faker::Address.city }
+    attraction_place_id { SecureRandom.hex(51) }
+    name { Faker::Company.name }
     email { Faker::Internet.email }
     phone { Faker::PhoneNumber.phone_number }
     website { Faker::Internet.url }

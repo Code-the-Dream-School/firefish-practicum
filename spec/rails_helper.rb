@@ -27,7 +27,9 @@ require 'rspec/rails'
 begin
   ActiveRecord::Migration.maintain_test_schema!
 rescue ActiveRecord::PendingMigrationError => e
+  # :nocov:
   abort e.to_s.strip
+  # :nocov:
 end
 RSpec.configure do |config|
   config.include Devise::Test::IntegrationHelpers, type: :request
