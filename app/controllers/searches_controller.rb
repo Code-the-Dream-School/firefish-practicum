@@ -17,9 +17,4 @@ class SearchesController < ApplicationController
     #   # render :index
     end
   end
-
-  def add_to_favorites
-    #current_user.cities.find(city_id).attractions.find(atrraction_id)
-
-  end
 end
