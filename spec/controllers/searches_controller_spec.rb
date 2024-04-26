@@ -31,5 +31,9 @@ RSpec.describe SearchesController, type: :controller do
         expect(assigns(:places)).to be_nil
       end
     end
+
+    describe "add_to_favorites" do
+
+    end
   end
 end
