@@ -58,7 +58,7 @@
                 <p class="card-text"><strong>Address:</strong> <%= place.address %></p>
               </div>
               <div class="card-footer bg-transparent border-top-0">
-                <%= button_to "Add to Favorites", add_path, params: { id: place.id, place_type: search_type }, class: "btn btn-primary" %>
+                <%= button_to "Add to Favorites", add_path, params: { place: {id: place.id, place_type: search_type} }, class: "btn btn-primary" %>
               </div>
             </div>
           </div>

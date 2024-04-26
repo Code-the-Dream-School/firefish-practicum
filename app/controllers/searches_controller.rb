@@ -19,8 +19,8 @@ class SearchesController < ApplicationController
   end
 
   def add_to_favorites
-    place_id = params[:id].to_i
-    place = params[:place_type].singularize
+    place_id = params[:place][:id].to_i
+    place = params[:place][:place_type].singularize
 
     case place
     when "Attraction"
@@ -44,12 +44,17 @@ class SearchesController < ApplicationController
         current_user.hotels << Restaurant.find(place_id)
         flash[:notice] = success_message(place)
       end
+    else
+      raise PlaceTypeInvalid.new("#{place} is not supported at the moment")
     end
 
     redirect_to search_path
   end
 
   private
+    def place_params
+      params.require[:place].permit(:id, :place_type)
+    end
 
     def failure_message(place_type)
       "The #{place_type} has already been added please select another one"
