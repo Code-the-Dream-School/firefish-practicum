@@ -31,9 +31,16 @@ RSpec.describe SearchesController, type: :controller do
         expect(assigns(:places)).to be_nil
       end
     end
+  end
 
-    describe "add_to_favorites" do
+  describe "add_to_favorites" do
+    it "should add a place that has not been saved previously" do
+    end
 
+    it "should not add a place that is already saved" do
+    end
+
+    it "should provide an error if the place type is not attraction/hotel/restaurant" do
     end
   end
 end
