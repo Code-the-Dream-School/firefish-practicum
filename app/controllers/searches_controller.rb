@@ -16,5 +16,19 @@ class SearchesController < ApplicationController
     #   @places = []
     #   # render :index
     end
+
+    def add_to_favorites
+      case params[:place_type]
+      when "Attractions"
+        current_user.attraction_ids = params[:id]
+      when "Hotels"
+        current_user.hotel_ids = params[:id]
+      when "Restaurants"
+        current_user.restaurant_ids = params[:id]
+      end
+
+      redirect_to root_path, notice: "Added Successfully"
+    end
+
   end
 end

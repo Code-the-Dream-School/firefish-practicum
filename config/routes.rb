@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root "home#index"
 
   get 'search', to: 'searches#index'
+  post 'add', to: 'searches#add_to_favorites'
 end
