@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe SearchesController, type: :controller do
+  include Devise::TestHelpers
+
   describe 'GET index' do
     let(:city_name) { 'Paris' }
 
@@ -32,4 +34,5 @@ RSpec.describe SearchesController, type: :controller do
       end
     end
   end
+
 end

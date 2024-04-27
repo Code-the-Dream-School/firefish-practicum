@@ -11,10 +11,6 @@ class SearchesController < ApplicationController
       end
 
       render :index
-    # else
-    #   flash.now[:alert] = 'Please enter a city name and select a type to search'
-    #   @places = []
-    #   # render :index
     end
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_25_142859) do
   create_table "attractions", force: :cascade do |t|
     t.string "attraction_place_id"
     t.string "name"
@@ -26,6 +26,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
     t.datetime "updated_at", null: false
     t.integer "city_id", null: false
     t.index ["city_id"], name: "index_attractions_on_city_id"
+  end
+
+  create_table "attractions_users", force: :cascade do |t|
+    t.integer "attraction_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["attraction_id"], name: "index_attractions_users_on_attraction_id"
+    t.index ["user_id"], name: "index_attractions_users_on_user_id"
   end
 
   create_table "cities", force: :cascade do |t|
@@ -53,6 +62,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
     t.index ["city_id"], name: "index_hotels_on_city_id"
   end
 
+  create_table "hotels_users", force: :cascade do |t|
+    t.integer "hotel_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["hotel_id"], name: "index_hotels_users_on_hotel_id"
+    t.index ["user_id"], name: "index_hotels_users_on_user_id"
+  end
+
   create_table "restaurants", force: :cascade do |t|
     t.string "restaurant_place_id"
     t.string "name"
@@ -71,6 +89,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
     t.index ["city_id"], name: "index_restaurants_on_city_id"
   end
 
+  create_table "restaurants_users", force: :cascade do |t|
+    t.integer "restaurant_id", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_restaurants_users_on_restaurant_id"
+    t.index ["user_id"], name: "index_restaurants_users_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -84,6 +111,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_18_011738) do
   end
 
   add_foreign_key "attractions", "cities"
+  add_foreign_key "attractions_users", "attractions"
+  add_foreign_key "attractions_users", "users"
   add_foreign_key "hotels", "cities"
+  add_foreign_key "hotels_users", "hotels"
+  add_foreign_key "hotels_users", "users"
   add_foreign_key "restaurants", "cities"
+  add_foreign_key "restaurants_users", "restaurants"
+  add_foreign_key "restaurants_users", "users"
 end

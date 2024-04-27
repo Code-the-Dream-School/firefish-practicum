@@ -1,136 +1,58 @@
-<h3 class="text-center">Welcome to Travel App!</h3>
-
 <%= render 'home/navbar' %>
-
-<h4>Attractions</h4>
+<h3 class="text-center mt-5">Welcome to Travel App!</h3>
+<h4 class="mt-5">Attractions</h4>
 <div class="d-flex flex-row flex-wrap justify-content-around">
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
+    <% current_user.attractions.each do |attraction| %>
+        <div class="card" style="width: 10rem;">
+            <% if attraction.image_url %>
+                <img src=<% attraction.image_url %> class="card-img-top">
+            <% else %>
+                <img src="https://placehold.co/50" class="card-img-top">
+            <% end %>
+            <div class="card-body">
+                <h5 class="card-title"><%= attraction.name %></h5>
+                <p class="card-text"><%= attraction.address %></p>
+                <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
+            </div>
         </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
+    <% end %>
 </div>
 <br/>
 
 <h4>Hotels</h4>
 <div class="d-flex flex-row flex-wrap justify-content-around">
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
+    <% current_user.hotels.each do |hotel| %>
+        <div class="card" style="width: 10rem;">
+            <% if hotel.image_url %>
+                <img src=<% attraction.image_url %> class="card-img-top">
+            <% else %>
+                <img src="https://placehold.co/50" class="card-img-top">
+            <% end %>
+            <div class="card-body">
+                <h5 class="card-title"><%= hotel.name %></h5>
+                <p class="card-text"><%= hotel.address %></p>
+                <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
+            </div>
         </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
+    <% end %>
 </div>
+<br />
 
 <h4>Restaurants</h4>
 <div class="d-flex flex-row flex-wrap justify-content-around">
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
+    <% current_user.restaurants.each do |restaurant| %>
+        <div class="card" style="width: 10rem;">
+            <% if restaurant.image_url %>
+                <img src=<% restaurant.image_url %> class="card-img-top">
+            <% else %>
+                <img src="https://placehold.co/50" class="card-img-top">
+            <% end %>
+            <div class="card-body">
+                <h5 class="card-title"><%= restaurant.name %></h5>
+                <p class="card-text"><%= restaurant.address %></p>
+                <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
+            </div>
         </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
-    <div class="card" style="width: 10rem;">
-        <img src="https://placehold.co/50" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Place Name</h5>
-            <p class="card-text">Address goes here</p>
-            <a href="#" class="btn btn-danger">Remove</a>
-        </div>
-    </div>
+    <% end %>
 </div>
+<br />

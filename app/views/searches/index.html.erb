@@ -1,3 +1,4 @@
+<%= render 'home/navbar' %>
 <div class="container my-4">
   <% if @places.blank? && params[:commit].present? %>
     <div class="alert alert-secondary" role="alert">
@@ -57,7 +58,7 @@
                 <p class="card-text"><strong>Address:</strong> <%= place.address %></p>
               </div>
               <div class="card-footer bg-transparent border-top-0">
-                <%= link_to "Add to Favorites", "#", class: "btn btn-primary" %>
+                <%= button_to "Add to Favorites", add_path, params: { place: {id: place.id, place_type: search_type} }, class: "btn btn-primary" %>
               </div>
             </div>
           </div>
