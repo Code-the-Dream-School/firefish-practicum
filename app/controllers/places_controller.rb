@@ -5,14 +5,12 @@ class PlacesController < ApplicationController
     
         case place
         when "Attractions"
-          current_user.attractions.create(attraction_id: place_id)
-
-          # if current_user.attraction_ids.include?(place_id)
-          #   flash[:alert] = failure_message(place)
-          # else
-          #   current_user.attractions << Attraction.find(place_id)
-          #   flash[:notice] = success_message(place)
-          # end
+          if current_user.attraction_ids.include?(place_id)
+            flash[:alert] = failure_message(place)
+          else
+            current_user.attractions << Attraction.find(place_id)
+            flash[:notice] = success_message(place)
+          end
         when "Hotels"
           if current_user.hotel_ids.include?(place_id)
             flash[:alert] = failure_message(place)
