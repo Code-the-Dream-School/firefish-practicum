@@ -19,7 +19,8 @@ module SearchLogic
             return places if places.count >= SEARCH_LIMIT
 
             response = get_place_details(category, city.city_place_id)
-            send("create_#{place_type}", response, city)
+            created_places = send("create_#{place_type}", response, city)
+            places + created_places
         end
 
         private
@@ -68,24 +69,32 @@ module SearchLogic
         end
 
         def create_attractions(response, city)
-            response["features"].map do |place| 
-                props = place["properties"]
-                dataraw = props["datasource"]["raw"]
-
-                attraction_place_id = props["place_id"]
-                name = props["name"]
-                email = dataraw["email"]
-                phone = dataraw["phone"]
-                website = dataraw["website"]
-                address = props["formatted"]
-                image_url = dataraw["image"]
-                toilets = dataraw["toilets"]
-                wheelchair = dataraw["wheelchair"]
-                changing_table = dataraw["changing_table"]
-
-                city.attractions.create(attraction_place_id:, name:, email:, phone:, website:, address:, image_url:, toilets:, wheelchair:, changing_table:)
+            attractions = response["features"].map do |place|
+              props = place["properties"]
+              dataraw = props["datasource"]["raw"]
+          
+              attraction = city.attractions.new(
+                attraction_place_id: props["place_id"],
+                name: props["name"],
+                email: dataraw["email"],
+                phone: dataraw["phone"],
+                website: dataraw["website"],
+                address: props["formatted"],
+                image_url: dataraw["image"],
+                toilets: dataraw["toilets"],
+                wheelchair: dataraw["wheelchair"],
+                changing_table: dataraw["changing_table"]
+              )
+          
+              if attraction.save
+                attraction
+              else
+                Rails.logger.error "Failed to save attraction: #{attraction.errors.full_messages.to_sentence}"
+                nil
+              end
             end
-        end
+            attractions.compact
+          end
 
         def create_hotels(response, city)
             response["features"].map do |place| 

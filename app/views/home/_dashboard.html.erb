@@ -10,7 +10,9 @@
                 <img src="https://placehold.co/50" class="card-img-top">
             <% end %>
             <div class="card-body">
-                <h5 class="card-title"><%= attraction.name %></h5>
+                <h5 class="card-title">
+                    <%= link_to attraction.name, attraction_path(attraction), class: "link-class" %>
+                </h5>
                 <p class="card-text"><%= attraction.address %></p>
                 <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
             </div>
@@ -24,12 +26,14 @@
     <% current_user.hotels.each do |hotel| %>
         <div class="card" style="width: 10rem;">
             <% if hotel.image_url %>
-                <img src=<% attraction.image_url %> class="card-img-top">
+                <img src=<% hotel.image_url %> class="card-img-top">
             <% else %>
                 <img src="https://placehold.co/50" class="card-img-top">
             <% end %>
             <div class="card-body">
-                <h5 class="card-title"><%= hotel.name %></h5>
+                <h5 class="card-title">
+                    <%= link_to hotel.name, hotel_path(hotel), class: "link-class" %>
+                </h5>
                 <p class="card-text"><%= hotel.address %></p>
                 <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
             </div>
@@ -48,7 +52,9 @@
                 <img src="https://placehold.co/50" class="card-img-top">
             <% end %>
             <div class="card-body">
-                <h5 class="card-title"><%= restaurant.name %></h5>
+                <h5 class="card-title">
+                    <%= link_to restaurant.name, restaurant_path(restaurant), class: "link-class" %>
+                </h5>
                 <p class="card-text"><%= restaurant.address %></p>
                 <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
             </div>

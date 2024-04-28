@@ -1,0 +1,18 @@
+<%= render 'home/navbar' %>
+<% content_for :title, "Attraction Details" %>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-12">
+      <%= render 'shared/place_card', 
+            image_url: @attraction.image_url, 
+            name: @attraction.name, 
+            email: @attraction.email, 
+            phone: @attraction.phone, 
+            website: @attraction.website, 
+            address: @attraction.address, 
+            wheelchair: @attraction.wheelchair, 
+            toilets: @attraction.toilets 
+      %>
+    </div>
+  </div>
+</div>

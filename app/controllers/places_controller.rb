@@ -22,7 +22,7 @@ class PlacesController < ApplicationController
           if current_user.restaurant_ids.include?(place_id)
             flash[:alert] = failure_message(place)
           else
-            current_user.hotels << Restaurant.find(place_id)
+            current_user.restaurants << Restaurant.find(place_id)
             flash[:notice] = success_message(place)
           end
         else
