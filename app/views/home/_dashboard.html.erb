@@ -12,7 +12,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%= attraction.name %></h5>
                 <p class="card-text"><%= attraction.address %></p>
-                <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
+                <%= button_to "Remove", remove_path, params: { place: { id: attraction.id, type: "attractions" } }, method: :delete, class: "btn btn-danger" %>
             </div>
         </div>
     <% end %>
@@ -31,7 +31,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%= hotel.name %></h5>
                 <p class="card-text"><%= hotel.address %></p>
-                <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
+                <%= button_to "Remove", remove_path, params: { place: { id: hotel.id, type: "hotels" } }, method: :delete, class: "btn btn-danger" %>
             </div>
         </div>
     <% end %>
@@ -50,7 +50,7 @@
             <div class="card-body">
                 <h5 class="card-title"><%= restaurant.name %></h5>
                 <p class="card-text"><%= restaurant.address %></p>
-                <%= button_to "Remove", "#", method: :delete, class: "btn btn-danger" %>
+                <%= button_to "Remove", remove_path, params: { place: { id: restaurant.id, type: "restaurants" } }, method: :delete, class: "btn btn-danger" %>
             </div>
         </div>
     <% end %>

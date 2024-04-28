@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root "home#index"
 
-  get '/search', to: 'searches#index'
+  delete '/remove', to: 'places#destroy'
+  delete '/remove_all', to: 'places#destroy_all'
   post '/add', to: 'places#add'
+  get '/search', to: 'searches#index'
 end
