@@ -1,0 +1,29 @@
+<div class="card">
+  <% if local_assigns[:image_url].present? %>
+    <img class="card-img-top img-fluid" src="<%= image_url %>" alt="<%= name %>" style="height: 600px; object-fit: cover;">
+  <% else %>
+    <img class="card-img-top" src="https://placehold.co/400x300?text=No+Image" style="height: 600px; object-fit: cover;" alt="Placeholder image">
+  <% end %>
+  <div class="card-body">
+    <h5 class="card-title"><%= name %></h5>
+    <p class="card-text"><strong>Email:</strong> <%= email %></p>
+    <p class="card-text"><strong>Phone:</strong> <%= phone %></p>
+    <p class="card-text"><strong>Website:</strong> <%= link_to website, website, target: "_blank" %></p>
+    <p class="card-text"><strong>Address:</strong> <%= address %></p>
+    <% if local_assigns.has_key?(:wheelchair) %>
+      <p class="card-text"><strong>Wheelchair Accessible:</strong> <%= wheelchair ? 'Yes' : 'No' %></p>
+    <% end %>
+    <% if local_assigns.has_key?(:stars) %>
+      <p class="card-text"><strong>Number of Stars:</strong> <%= stars %></p>
+    <% end %>
+    <% if local_assigns.has_key?(:toilets) %>
+      <p class="card-text"><strong>Restrooms Available:</strong> <%= toilets ? 'Yes' : 'No' %></p>
+    <% end %>
+    <% if local_assigns.has_key?(:indoor_seating) %>
+      <p class="card-text"><strong>Indoor Seating:</strong> <%= indoor_seating %></p>
+    <% end %>
+    <% if local_assigns.has_key?(:outdoor_seating) %>
+      <p class="card-text"><strong>Outdoor Seating:</strong> <%= outdoor_seating %></p>
+    <% end %>
+  </div>
+</div>

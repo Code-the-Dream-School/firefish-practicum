@@ -1,0 +1,18 @@
+<%= render 'home/navbar' %>
+<% content_for :title, "Hotel Details" %>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-12">
+      <%= render 'shared/place_card', 
+            image_url: @hotel.image_url, 
+            name: @hotel.name, 
+            email: @hotel.email, 
+            phone: @hotel.phone, 
+            website: @hotel.website, 
+            address: @hotel.address, 
+            wheelchair: @hotel.wheelchair, 
+            stars: @hotel.stars
+      %>
+    </div>
+  </div>
+</div>
