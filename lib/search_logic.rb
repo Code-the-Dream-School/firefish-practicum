@@ -4,8 +4,7 @@ module SearchLogic
     class << self
 
         def extract_city_place_id(json_data)
-          return nil unless json_data && json_data['results'] && json_data['results'][0]
-          json_data['results'][0]['place_id']
+          json_data.try(:[], 'results')&.first.try(:[], 'place_id')
         end
   
         def extract_city_name(json_data)
