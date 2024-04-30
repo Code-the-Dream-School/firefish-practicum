@@ -1,0 +1,26 @@
+.text-dark-grey {
+    color: #474349;
+  }
+  
+.btn-clear-orange {
+    background: transparent; 
+    color: #FF713C; 
+    border: none; 
+}
+
+.navbar-adjust {
+    padding-left: 22rem; 
+    padding-right: 22rem;
+}
+
+.nav-logo {
+    margin-right: 30rem; 
+}
+
+.nav-email {
+    background-color: #FF713C;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: auto;
+}
