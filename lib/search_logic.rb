@@ -2,6 +2,17 @@ module SearchLogic
     SEARCH_LIMIT = 20
 
     class << self
+
+        def extract_city_place_id(json_data)
+          json_data.try(:[], 'results')&.first.try(:[], 'place_id')
+        end
+  
+        def extract_city_name(json_data)
+          return nil unless json_data && json_data['results'] && json_data['results'][0]
+          results_obj = json_data['results'][0]
+          results_obj['city'] + ', ' + results_obj['country']
+        end
+        
         def get_places_from_city_string(city_name, place_type)
             category = case place_type
             when "attractions"

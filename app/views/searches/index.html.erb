@@ -1,4 +1,3 @@
-<%= render 'home/navbar' %>
 <div class="container my-4">
   <% if @places.blank? && params[:commit].present? %>
     <div class="alert alert-secondary" role="alert">
@@ -7,12 +6,11 @@
   <% end %>
 
   <%= form_with url: search_path, method: :get, local: true, class: 'row g-3' do |form| %>
-
       <div class="col-8">
         <%= form.text_field :city_name, class: 'form-control p-2', placeholder: "Type a city name" %>
       </div>
       <div class="col-auto">
-        <%= form.submit "Search", class: "btn btn-primary p-2" %>
+        <%= form.submit "Search", class: "btn btn-primary p-2", style: "background-color: #4DC9B1; border-color: #4DC9B1;" %>
       </div>
 
     <div class="btn-group-toggle my-4" data-toggle="buttons">
@@ -21,7 +19,7 @@
         <%= form.label :place_type_attractions, 'Attractions', class: 'btn btn-outline-secondary', for: 'attractions' %>
     
         <%= form.check_box :place_type_hotels, {class: 'btn-check', id: 'hotels'}, 'hotels', nil %>
-        <%= form.label :place_type_hotels, 'Hotels', class: 'btn btn-outline-secondary', for: 'hotels' %>
+      <%= form.label :place_type_hotels, 'Hotels', class: 'btn btn-outline-secondary', for: 'hotels' %>
     
         <%= form.check_box :place_type_restaurants, {class: 'btn-check', id: 'restaurants'}, 'restaurants', nil %>
         <%= form.label :place_type_restaurants, 'Restaurants', class: 'btn btn-outline-secondary', for: 'restaurants' %>
@@ -37,13 +35,18 @@
         <div class="col">
           <div class="card h-100">
             <div class="row g-0">
-              <div class="col-md-4">
-                <% if place.image_url.present? && place.image_url.match(/\.(jpeg|jpg|gif|png)$/i) %>
-                  <%= image_tag place.image_url, class: 'img-fluid rounded-start', alt: place.name, style: 'width: 100%; height: 220px; object-fit: cover;' %>
+            <div class="col-md-4">
+              <% if place.image_url.present? && place.image_url.match(/\.(jpeg|jpg|gif|png)$/i) %>
+                <% if place.image_url.start_with?('http://', 'https://') %>
+                  <%= image_tag place.image_url, class: 'img-fluid rounded-start', alt: place.name || 'No image', style: 'width: 100%; height: 220px; object-fit: cover;' %>
                 <% else %>
-                  <%= image_tag 'https://placehold.co/450x220?text=No+image', class: 'img-fluid rounded-start', alt: 'No image can be displayed' %>
+                  <% image_path = asset_path(place.image_url) rescue 'default_image.jpg' %>
+                  <%= image_tag image_path, class: 'img-fluid rounded-start', alt: place.name || 'No image', style: 'width: 100%; height: 220px; object-fit: cover;' %>
                 <% end %>
-              </div>
+              <% else %>
+                <%= image_tag 'default_image.jpg', class: 'img-fluid rounded-start', alt: 'No image available', style: 'width: 100%; height: 220px; object-fit: cover;' %>
+              <% end %>
+            </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title ">
@@ -71,7 +74,7 @@
                 <p class="card-text"><strong>Address:</strong> <%= place.address %></p>
               </div>
               <div class="card-footer bg-transparent border-top-0">
-                <%= button_to "Add to Favorites", add_path, params: { place: {id: place.id, place_type: search_type} }, class: "btn btn-success" %>
+                <%= button_to "Add to Collections", add_path, params: { place: {id: place.id, place_type: search_type} }, class: "btn btn-success", style: "background-color: #4DC9B1; border-color: #4DC9B1;" %>
               </div>
             </div>
           </div>
@@ -83,3 +86,28 @@
   <div class="alert alert-info">No results were found or search is not executed.</div>
 <% end %>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const checkboxes = document.querySelectorAll(".btn-check");
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", function() {
+        const label = document.querySelector(`label[for="${this.id}"]`);
+        if (this.checked) {
+          label.classList.add("btn-selected");
+        } else {
+          label.classList.remove("btn-selected");
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .btn-selected {
+    background-color: #FF713C !important;
+    border-color: #FF713C !important;
+    color: white !important;
+  }
+</style>

@@ -7,7 +7,12 @@ class SearchesController < ApplicationController
       selected_place_types << 'restaurants' if params[:place_type_restaurants] == 'restaurants'
 
       @places = selected_place_types.flat_map do |place_type|
-        SearchLogic.get_places_from_city_string(params[:city_name], place_type)
+        begin
+          SearchLogic.get_places_from_city_string(params[:city_name], place_type)
+        rescue StandardError => e
+          Rails.logger.error "Error in fetching places: #{e.message}"
+          []
+        end
       end
 
       render :index
